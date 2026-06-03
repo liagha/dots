@@ -79,7 +79,7 @@ if command -v zoxide >/dev/null 2>&1; then
     eval "$(zoxide init zsh --cmd cd)"
 fi
 
-source /usr/share/fzf/key-bindings.zsh
-source /usr/share/fzf/completion.zsh
+[[ -f $PREFIX/share/fzf/key-bindings.zsh ]] && source $PREFIX/share/fzf/key-bindings.zsh
+[[ -f $PREFIX/share/fzf/completion.zsh ]] && source $PREFIX/share/fzf/completion.zsh
 
 export PATH="$HOME/.local/bin:$PATH"
