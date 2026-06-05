@@ -74,8 +74,3 @@ Remove symlinks (config backups preserved):
 ```bash
 make clean
 ```
-
-## License
-
-MIT
-```
