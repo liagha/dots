@@ -4929,3 +4929,31 @@ cd hub && cargo run -- foo bar
 : 1780515019:0;tree
 : 1780515058:0;cp ~/.zshrc zshrc
 : 1780515075:0;cp ~/.zsh_history ./zsh_history
+: 1780688886:0;source ./.zshrc
+: 1780688893:0;fzf
+: 1780688914:0;c
+: 1780689009:0;nvim ./.zshrc
+: 1780689035:0;c
+: 1780689036:0;source ./.zshrc
+: 1780689040:0;nvim ./.zshrc
+: 1780689054:0;c
+: 1780689060:0;catpp ./.zshrc
+: 1780689097:0;cargo install tgt
+: 1780689099:0;c
+: 1780689255:0;shutdown now
+: 1780753989:0;nvim ./.zshrc
+: 1780754039:0;c
+: 1780754040:0;shutdown now
+: 1780754082:0;c
+: 1780754097:0;nvim ./.zshrc
+: 1780754182:0;c
+: 1780754185:0;catpp ./.zshrc
+: 1780754230:0;nvim ./.zshrc
+: 1780754237:0;c
+: 1780754239:0;source ./.zshrc
+: 1780754240:0;c
+: 1780754251:0;cd dots
+: 1780754252:0;c
+: 1780754255:0;git pull
+: 1780754256:0;c
+: 1780754259:0;cp ~/.zsh_history ./zsh_history

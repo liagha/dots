@@ -32,6 +32,15 @@ default_floating_border pixel 1
 hide_edge_borders both
 for_window [class=".*"] border pixel 1
 
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 800 600
+for_window [instance="dropdown"] move scratchpad
+
+exec --no-startup-id alacritty --class dropdown --title dropdown
+
+bindsym $mod+grave [instance="dropdown"] scratchpad show
+bindsym $mod+Shift+grave [instance="dropdown"] move scratchpad
+
 bindsym $mod+Return       exec ghostty
 bindsym $mod+Shift+q      kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme /usr/share/rofi/themes/gruvbox-dark.rasi 

@@ -79,7 +79,17 @@ if command -v zoxide >/dev/null 2>&1; then
     eval "$(zoxide init zsh --cmd cd)"
 fi
 
-[[ -f $PREFIX/share/fzf/key-bindings.zsh ]] && source $PREFIX/share/fzf/key-bindings.zsh
-[[ -f $PREFIX/share/fzf/completion.zsh ]] && source $PREFIX/share/fzf/completion.zsh
+if command -v fzf >/dev/null 2>&1; then
+  if [[ -f "$(brew --prefix 2>/dev/null)/opt/fzf/shell/key-bindings.zsh" ]]; then
+    source "$(brew --prefix)/opt/fzf/shell/key-bindings.zsh"
+    source "$(brew --prefix)/opt/fzf/shell/completion.zsh"
+  elif [[ -f /usr/share/fzf/key-bindings.zsh ]]; then
+    source /usr/share/fzf/key-bindings.zsh
+    source /usr/share/fzf/completion.zsh
+  elif [[ -f /usr/local/opt/fzf/shell/key-bindings.zsh ]]; then
+    source /usr/local/opt/fzf/shell/key-bindings.zsh
+    source /usr/local/opt/fzf/shell/completion.zsh
+  fi
+fi
 
 export PATH="$HOME/.local/bin:$PATH"
