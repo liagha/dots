@@ -1,5 +1,3 @@
--- lua/autocmds.lua
-
 local group = vim.api.nvim_create_augroup("UserConfig", { clear = true })
 
 local ext_lang = {
@@ -17,6 +15,7 @@ local ext_lang = {
     sh   = "sh",
     zig  = "zig",
     c3   = "c3",
+    odin = "odin",
 }
 
 local run_commands = {
@@ -66,6 +65,11 @@ local run_commands = {
     c3 = {
         run   = "c3c run {file}",
         build = "c3c build {file}",
+    },
+    odin = {
+        run   = "odin run {file}",
+        build = "odin build {file}",
+        check = "odin check {file}",
     },
 }
 

@@ -1,5 +1,3 @@
--- lua/plugins.lua
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 vim.fn.system({
@@ -57,6 +55,12 @@ require("lazy").setup({
                         view_options = {
                         show_hidden = true,
                         },
+                        columns = {
+                        "icon",
+                        "permissions",
+                        "size",
+                        "mtime",
+                        },
                         float = {
                         padding = 2,
                         },
@@ -65,6 +69,27 @@ require("lazy").setup({
                         ["<CR>"] = "actions.select",
                         ["-"] = "actions.parent",
                         ["_"] = "actions.open_cwd",
+                        },
+                })
+            end,
+        },
+
+        {
+            "folke/which-key.nvim",
+            event = "VeryLazy",
+            config = function()
+                local wk = require("which-key")
+                wk.setup({
+                        icons = { rules = false },
+                        spec = {
+                        { "<leader>f", group = "find" },
+                        { "<leader>g", group = "git" },
+                        { "<leader>h", group = "harpoon" },
+                        { "<leader>o", group = "open" },
+                        { "<leader>s", group = "swap/source/terminal" },
+                        { "<leader>d", group = "debug" },
+                        { "<leader>y", group = "yank" },
+                        { "<leader>p", group = "paste" },
                         },
                         })
             end,
@@ -299,6 +324,7 @@ require("lazy").setup({
                         python = { "black" },
                         javascript = { "prettier" },
                         typescript = { "prettier" },
+                        odin = { "odinfmt" },
                         },
                         format_on_save = {
                         lsp_fallback = true,
@@ -318,7 +344,7 @@ require("lazy").setup({
                         ensure_install = {
                         "c", "cpp", "rust", "python", "go",
                         "lua", "javascript", "typescript",
-                        "zig", "java", "bash",
+                        "zig", "java", "bash", "odin",
                         },
                         })
             end,

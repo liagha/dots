@@ -159,7 +159,7 @@ _comps=(
 'cc' '_gcc'
 'ccache' '_ccache'
 'ccal' '_ccal'
-'cd' '__zoxide_z_complete'
+'cd' '_cd'
 'cdc' '_sccs'
 'cdcd' '_cdcd'
 'cdr' '_cdr'

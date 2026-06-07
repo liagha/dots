@@ -1,5 +1,3 @@
--- lua/lsp.lua
-
 local cargo_bin = vim.fn.expand("~/.cargo/bin")
 if vim.fn.isdirectory(cargo_bin) == 1 then
     vim.env.PATH = cargo_bin .. ":" .. vim.env.PATH
@@ -125,4 +123,10 @@ setup("lua_ls", {
             telemetry = { enable = false },
         },
     },
+})
+
+setup("ols", {
+    cmd = { "ols" },
+    filetypes = { "odin" },
+    root_markers = { ".git" },
 })
