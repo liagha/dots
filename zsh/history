@@ -1,0 +1,37 @@
+: 1780825135:0;nvim ./.config/zsh
+: 1780825144:0;c
+: 1780825145:0;source ./.zshrc
+: 1780825146:0;c
+: 1780825250:0;nvim ./.config/zsh
+: 1780825259:0;c
+: 1780825259:0;source ./.zshrc
+: 1780825270:0;c
+: 1780825271:0;\
+ls ~/.zsh_functions/_cargo 2>/dev/null || ls /usr/share/zsh/site-functions/_cargo 2>/dev/null\
+\
+#\
+mkdir -p ~/.zsh_functions\
+rustup completions zsh cargo > ~/.zsh_functions/_cargo
+: 1780825274:0;c
+: 1780825291:0;nvim ./.config/zsh
+: 1780825294:0;c
+: 1780825297:0;nvim .zshrc
+: 1780825301:0;c
+: 1780825301:0;source ./.zshrc
+: 1780825302:0;c
+: 1780825316:0;cd axo
+: 1780825316:0;c
+: 1780825323:0;cargo run --example=basic_lexer
+: 1780825324:0;c
+: 1780825330:0;cd ..
+: 1780825330:0;c
+: 1780825336:0;cd dots
+: 1780825336:0;c
+: 1780825345:0;tree
+: 1780825360:0;rm -rf nvim modules zshrc zsh_history install.sh Makefile
+: 1780825367:0;rm -rf *
+: 1780825373:0;c
+: 1780825376:0;cp -r ~/.config/nvim/ nvim/
+: 1780825383:0;cp -r ~/.config/i3/ i3/
+: 1780825384:0;tree
+: 1780825390:0;cp -r ~/.config/zsh/ zsh/

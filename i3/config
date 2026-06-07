@@ -11,7 +11,7 @@ set $urgent #ff2222
 
 exec --no-startup-id setxkbmap -layout us,ir -option grp:ctrl_space_toggle
 exec --no-startup-id dex --autostart --environment i3
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --color=000000 --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --color=000000 --nofork -u
 exec --no-startup-id nm-applet
 exec --no-startup-id xrdb -merge ~/.Xresources
 
@@ -19,6 +19,11 @@ exec --no-startup-id gsettings set org.gnome.desktop.interface gtk-theme 'Adwait
 exec --no-startup-id gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 set $refresh_i3status killall -SIGUSR1 i3status
+
+bindsym $mod+Shift+x exec --no-startup-id sh -c 'i3lock --color=000000 --nofork && sleep 1 && xset dpms force off && xrandr --output $(xrandr | grep " connected" | head -1 | cut -d" " -f1) --off'
+
+bindsym $mod+Shift+z exec --no-startup-id sh -c 'xrandr --output $(xrandr | grep " connected" | head -1 | cut -d" " -f1) --auto && xset dpms force on'
+
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
@@ -32,23 +37,10 @@ default_floating_border pixel 1
 hide_edge_borders both
 for_window [class=".*"] border pixel 1
 
-for_window [instance="dropdown"] floating enable
-for_window [instance="dropdown"] resize set 800 600
-for_window [instance="dropdown"] move scratchpad
-
-exec --no-startup-id alacritty --class dropdown --title dropdown
-
-bindsym $mod+grave [instance="dropdown"] scratchpad show
-bindsym $mod+Shift+grave [instance="dropdown"] move scratchpad
-
-bindsym $mod+Return       exec ghostty
+bindsym $mod+Return       exec alacritty
 bindsym $mod+Shift+q      kill
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme /usr/share/rofi/themes/gruvbox-dark.rasi 
 
-bindsym $mod+j            focus left
-bindsym $mod+k            focus down
-bindsym $mod+l            focus up
-bindsym $mod+semicolon    focus right
 bindsym $mod+Left         focus left
 bindsym $mod+Down         focus down
 bindsym $mod+Up           focus up

@@ -4957,3 +4957,446 @@ cd hub && cargo run -- foo bar
 : 1780754255:0;git pull
 : 1780754256:0;c
 : 1780754259:0;cp ~/.zsh_history ./zsh_history
+: 1780754261:0;cp ~/.zshrc zshrc
+: 1780754276:0;cp ~/.config/nvim nvim -r
+: 1780754277:0;c
+: 1780754277:0;ll
+: 1780754280:0;tree
+: 1780754288:0;mv nvim/nvim nvim
+: 1780754301:0;rm -rf nvim
+: 1780754302:0;c
+: 1780754303:0;tre
+: 1780754304:0;tree
+: 1780754305:0;c
+: 1780754306:0;tree
+: 1780754321:0;cp -r ~/.config/nvim/ nvim/
+: 1780754323:0;tree
+: 1780754325:0;c
+: 1780754329:0;git add .
+: 1780754331:0;git commit -a -m "initial"
+: 1780754334:0;git pushc
+: 1780754335:0;git push
+: 1780754338:0;c
+: 1780754450:0;cd
+: 1780754451:0;c
+: 1780754456:0;mv dots Projects/dots
+: 1780754456:0;c
+: 1780754458:0;ll
+: 1780754459:0;ls
+: 1780754459:0;c
+: 1780754459:0;ls
+: 1780754463:0;ls fvm
+: 1780754466:0;rm -rf fvm
+: 1780754466:0;c
+: 1780754469:0;ls fvm
+: 1780754470:0;ls
+: 1780754472:0;c
+: 1780754534:0;sudo hiddify
+: 1780754547:0;c
+: 1780754605:0;git reset --hard
+: 1780754605:0;c
+: 1780754631:0;cargo check --all-features
+: 1780754668:0;c
+: 1780754670:0;cargo check --all-features
+: 1780754696:0;c
+: 1780754696:0;cargo check --all-features
+: 1780754710:0;c
+: 1780754710:0;cargo check --all-features
+: 1780754717:0;c
+: 1780754718:0;cargo check --all-features
+: 1780754762:0;c
+: 1780754763:0;cargo check --all-features
+: 1780754809:0;c
+: 1780754826:0;cargo build --release --features interpreter,dialog\
+
+: 1780754841:0;c
+: 1780754844:0;./target/release/axo examples/calculator.axo
+: 1780754851:0;./target/release/axo examples/fibonacci.axo
+: 1780754863:0;c
+: 1780754869:0;./target/release/axo examples/fibonacci.axo
+: 1780754907:0;c
+: 1780754911:0;./target/release/axo
+: 1780754919:0;c
+: 1780754938:0;cargo vendor
+: 1780754945:0;c
+: 1780754955:0;git commit -a -m "fixes"
+: 1780754957:0;git push
+: 1780754958:0;c
+: 1780754961:0;git push github
+: 1780754966:0;c
+: 1780755076:0;cargo build --release --features interpreter,dialog\
+
+: 1780755090:0;c
+: 1780755091:0;./target/release/axo
+: 1780755108:0;c
+: 1780755115:0;git commit -a -m "remove(union)"
+: 1780755117:0;git push
+: 1780755117:0;c
+: 1780755118:0;git push github
+: 1780755122:0;c
+: 1780755313:0;git reset --hard
+: 1780755313:0;c
+: 1780755366:0;cd axo
+: 1780755367:0;c
+: 1780755367:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755378:0;c
+: 1780755388:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755421:0;c
+: 1780755421:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755459:0;c
+: 1780755459:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755549:0;c
+: 1780755549:0;\
+cargo clippy --fix --allow-dirty\
+\
+#\
+cargo clippy --fix --allow-dirty -- -W clippy::all
+: 1780755558:0;c
+: 1780755566:0;\
+cargo clippy --fix --allow-dirty\
+\
+#\
+cargo clippy --fix --allow-dirty -- -W clippy::all
+: 1780755574:0;c
+: 1780755575:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755606:0;c
+: 1780755606:0;\
+cargo clippy --fix --allow-dirty --allow-staged -- -W clippy::all -W clippy::pedantic
+: 1780755613:0;c
+: 1780755615:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755631:0;c
+: 1780755632:0;cargo clippy -- -W clippy::all -W clippy::pedantic 2>&1 | head -50
+: 1780755648:0;c
+: 1780755649:0;cargo clippy --fix --allow-dirty -- -W clippy::all -W clippy::pedantic 2>&1
+: 1780755662:0;c
+: 1780755673:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780755763:0;c
+: 1780755764:0;cargo clippy --fix
+: 1780755769:0;cargo clippy --fix --allow-dirty
+: 1780755776:0;c
+: 1780755776:0;cargo clippy --fix --allow-dirty
+: 1780755794:0;c
+: 1780755795:0;cargo clippy --fix --allow-dirty
+: 1780755866:0;c
+: 1780755867:0;cargo clippy --fix --allow-dirty
+: 1780755895:0;c
+: 1780755896:0;cargo clippy --fix --allow-dirty
+: 1780755910:0;c
+: 1780755910:0;cargo clippy --fix --allow-dirty
+: 1780755952:0;c
+: 1780756000:0;cargo clippy --fix --allow-dirty
+: 1780756022:0;c
+: 1780756022:0;cargo clippy --fix --allow-dirty
+: 1780756050:0;c
+: 1780756050:0;cargo clippy --fix --allow-dirty
+: 1780756091:0;c
+: 1780756092:0;cargo clippy --fix --allow-dirty
+: 1780756112:0;c
+: 1780756112:0;cargo clippy --fix --allow-dirty
+: 1780756135:0;c
+: 1780756135:0;cargo clippy --fix --allow-dirty
+: 1780756169:0;c
+: 1780756170:0;cargo clippy --fix --allow-dirty
+: 1780756362:0;c
+: 1780756363:0;cargo clippy --fix --allow-dirty
+: 1780756378:0;c
+: 1780756378:0;cargo clippy --fix --allow-dirty
+: 1780756385:0;c
+: 1780756385:0;cargo clippy --fix --allow-dirty
+: 1780756423:0;c
+: 1780756423:0;cargo clippy --fix --allow-dirty
+: 1780756448:0;c
+: 1780756449:0;cargo clippy --fix --allow-dirty
+: 1780756535:0;c
+: 1780756535:0;cargo clippy --fix --allow-dirty
+: 1780756556:0;c
+: 1780756557:0;cargo clippy --fix --allow-dirty
+: 1780756573:0;c
+: 1780756574:0;cargo clippy --fix --allow-dirty
+: 1780756587:0;c
+: 1780756587:0;cargo clippy --fix --allow-dirty
+: 1780756605:0;c
+: 1780756605:0;cargo clippy --fix --allow-dirty
+: 1780756638:0;c
+: 1780756639:0;cargo clippy --fix --allow-dirty
+: 1780756646:0;cargo clippy -- -W clippy::all -W clippy::pedantic
+: 1780756804:0;c
+: 1780756808:0;cargo build --release --features interpreter,dialog\
+
+: 1780756821:0;c
+: 1780756825:0;./target/release/axo examples/fibonacci.axo -v 2
+: 1780757987:0;c
+: 1780757987:0;cd
+: 1780757988:0;c
+: 1780757988:0;https://github.com/maestro-os/maestro.git
+: 1780757992:0;git clone https://github.com/maestro-os/maestro.git
+: 1780758005:0;cd kernel
+: 1780758005:0;c
+: 1780758010:0;cd maestro/c
+: 1780758012:0;cd maestro/
+: 1780758012:0;c
+: 1780758016:0;cargo run
+: 1780758439:0;c
+: 1780758439:0;cargo run
+: 1780758629:0;c
+: 1780758630:0;cargo run
+: 1780758632:0;c
+: 1780758632:0;ll
+: 1780758636:0;cd kernel
+: 1780758636:0;c
+: 1780758637:0;cargo run
+: 1780758723:0;c
+: 1780758724:0;cargo run
+: 1780758745:0;c
+: 1780758751:0;cd ..
+: 1780758752:0;c
+: 1780758758:0;ls
+: 1780758762:0;cd kernel
+: 1780758762:0;c
+: 1780758763:0;ls
+: 1780758768:0;./scripts/qemu.sh
+: 1780758786:0;sudo pacman -S qemu-system-x86
+: 1780758808:0;c
+: 1780758810:0;./scripts/qemu.sh
+: 1780758818:0;sudo pacman -S grub
+: 1780758824:0;c
+: 1780758825:0;./scripts/qemu.sh
+: 1780758836:0;sudo pacman -S xorriso
+: 1780758840:0;c
+: 1780758841:0;./scripts/qemu.sh
+: 1780758847:0;ls
+: 1780758850:0;cd ..
+: 1780758851:0;ls
+: 1780758853:0;cd kernel
+: 1780758854:0;c
+: 1780758854:0;ls
+: 1780758860:0;cd scripts
+: 1780758860:0;c
+: 1780758861:0;ls
+: 1780758865:0;./qemu.sh
+: 1780758879:0;cd ..
+: 1780758880:0;c
+: 1780758882:0;./scripts/qemu.sh
+: 1780758901:0;c
+: 1780758907:0;catpp scripts/qemu.sh
+: 1780758916:0;cat scripts/iso/boot/grub
+: 1780758917:0;c
+: 1780758940:0;cd .
+: 1780758942:0;cd ..
+: 1780758943:0;c
+: 1780758944:0;nvim .
+: 1780758959:0;c
+: 1780758961:0;cargo run
+: 1780758963:0;cd kernel
+: 1780758963:0;c
+: 1780758965:0;cargo run
+: 1780758981:0;sudo pacman -S mtools
+: 1780758986:0;c
+: 1780758990:0;./scripts/qemu.sh
+: 1780759119:0;nvim .cargo/config.toml
+: 1780759130:0;c
+: 1780759131:0;cargo run
+: 1780759136:0;./scripts/qemu.sh
+: 1780759150:0;c
+: 1780759151:0;paru -S x86_64-elf-binutils
+: 1780759156:0;sudo pacman -S paru
+: 1780759159:0;c
+: 1780759161:0;paru -S x86_64-elf-binutils
+: 1780759172:0;c
+: 1780759173:0;yay -S x86_64-elf-binutils
+: 1780759284:0;sudo pacman -S
+: 1780759298:0;sudo pacman -S x86_64-elf-binutils
+: 1780759303:0;c
+: 1780759491:0;./scripts/qemu.sh
+: 1780759493:0;c
+: 1780759498:0;cargo run
+: 1780759531:0;c
+: 1780759531:0;QEMUFLAGS="-display gtk" cargo run
+: 1780759548:0;c
+: 1780759549:0;QEMUFLAGS="-display sdl" cargo run
+: 1780759555:0;qemu-system-x86_64 -display help
+: 1780759562:0;c
+: 1780759563:0;sudo pacman -S qemu-ui-sdl\
+#\
+sudo pacman -S qemu-ui-gtk
+: 1780759571:0;c
+: 1780759575:0;QEMUFLAGS="-display gtk" cargo run
+: 1780759613:0;c
+: 1780759616:0;QEMUFLAGS="-display sdl" cargo run
+: 1780759666:0;c
+: 1780759682:0;sudo pacman -S qemu-desktop
+: 1780759694:0;c
+: 1780759702:0;cargo run
+: 1780759723:0;c
+: 1780759763:0;cd
+: 1780759764:0;c
+: 1780759767:0;rm -rf maestro
+: 1780759767:0;c
+: 1780759771:0;ll
+: 1780759772:0;c
+: 1780759789:0;git commit -a -m "refactor"
+: 1780759790:0;c
+: 1780759791:0;git push
+: 1780759791:0;c
+: 1780759794:0;git push github
+: 1780759797:0;c
+: 1780759810:0;cd axo
+: 1780759811:0;c
+: 1780759825:0;catpp src/analyzer src/resolver
+: 1780759836:0;catpp src/resolver
+: 1780759841:0;catpp src/analyzer
+: 1780761023:0;c
+: 1780761025:0;shutdown now
+: 1780765675:0;cd axo
+: 1780765676:0;cd ..
+: 1780765676:0;c
+: 1780765681:0;mv axo axo-archive
+: 1780765682:0;c
+: 1780765775:0;catpp ~/.config/i3
+: 1780765859:0;c
+: 1780765861:0;cd
+: 1780765874:0;c
+: 1780765878:0;nvim ~/.config/i3/config
+: 1780765886:0;c
+: 1780765949:0;nvim ~/.config/i3/config
+: 1780766043:0;c
+: 1780766044:0;sudo pacman -S hyprlock
+: 1780766049:0;c
+: 1780766053:0;nvim ~/.config/i3/config
+: 1780766075:0;c
+: 1780766087:0;nvim ~/.config/i3/config
+: 1780766095:0;c
+: 1780766100:0;nvim ~/.config/i3/config
+: 1780766158:0;c
+: 1780766167:0;nvim ~/.config/i3/config
+: 1780766174:0;c
+: 1780766301:0;cd pro
+: 1780766301:0;c
+: 1780766303:0;ls
+: 1780766308:0;cd axo-archive
+: 1780766308:0;c
+: 1780766310:0;git commit -a -m "refactor"
+: 1780766316:0;git add chaint
+: 1780766316:0;c
+: 1780766318:0;git commit -a -m "refactor"
+: 1780766319:0;c
+: 1780766321:0;git push github
+: 1780766334:0;c
+: 1780766336:0;git commit -a -m "refactor"
+: 1780766337:0;git push github
+: 1780766377:0;c
+: 1780766378:0;cd ..
+: 1780766378:0;c
+: 1780766390:0;git clone https://github.com/liagha/axo.git
+: 1780766395:0;c
+: 1780766397:0;cd axo
+: 1780766397:0;c
+: 1780766399:0;ls
+: 1780766400:0;tree
+: 1780766400:0;c
+: 1780766403:0;cargo init
+: 1780766404:0;ls
+: 1780766409:0;git add Cargo.toml src
+: 1780766409:0;g
+: 1780766410:0;c
+: 1780766421:0;git commit -a -m "new(cargo)"
+: 1780766422:0;c
+: 1780766423:0;git push
+: 1780766427:0;c
+: 1780766554:0;nvim ~/.config/i3/config
+: 1780766574:0;c
+: 1780766597:0;nvim ~/.config/i3/config
+: 1780766608:0;c
+: 1780766621:0;nvim ~/.config/i3/config
+: 1780766648:0;c
+: 1780766705:0;\
+ls /sys/class/backlight/
+: 1780766712:0;c
+: 1780766762:0;nvim ~/.config/i3/config
+: 1780766774:0;c
+: 1780766775:0;nvim ~/.config/i3/config
+: 1780766779:0;c
+: 1780766837:0;cd chaint
+: 1780766838:0;c
+: 1780766857:0;catpp src/formation src/lib.rs src/peek.rs
+: 1780767211:0;c
+: 1780767338:0;nvim .
+: 1780767518:0;shutdown now
+: 1780767875:0;cd axo
+: 1780767876:0;c
+: 1780768204:0;sudo hiddify
+: 1780768213:0;c
+: 1780769261:0;nvim src/chain/mod.rs
+: 1780769412:0;nvim src/chain/links.rs
+: 1780769454:0;c
+: 1780769463:0;nvim src/chain/chain.rs
+: 1780769467:0;c
+: 1780770156:0;nvim src/chain/chain.rs
+: 1780770161:0;c
+: 1780770167:0;nvim src/chain/links.rs
+: 1780770187:0;cargo build
+: 1780770188:0;c
+: 1780770200:0;cargo build
+: 1780771142:0;c
+: 1780771173:0;nvim ~/.config/i3/config
+: 1780771233:0;c
+: 1780771244:0;nvim ~/.config/i3/config
+: 1780771272:0;c
+: 1780771370:0;nvim ../axo-archive/src/scanner/formation/mod.rs
+: 1780771476:0;c
+: 1780771484:0;catpp ~/Obsidian/Coding\ Rules.md . -c "pwd" -c "tree"
+: 1780771488:0;catpp ~/Obsidian/Coding\ Rules.md -c "pwd" -c "tree"
+: 1780771489:0;c
+: 1780771509:0;catpp src/
+: 1780771553:0;nvim src/chain/chain.rs
+: 1780771557:0;c
+: 1780771563:0;nvim src/chain/links.rs
+: 1780771570:0;c
+: 1780771898:0;catpp src/
+: 1780772106:0;c
+: 1780772111:0;nvim ../axo-archive/src/scanner/formation/mod.rs
+: 1780773021:0;c
+: 1780773023:0;shutdown now
+: 1780824397:0;catpp ./.zshrc
+: 1780824486:0;nvim ./.zshrc
+: 1780824508:0;c
+: 1780824510:0;source ./.zshrc
+: 1780824511:0;c
+: 1780824538:0;cd axo
+: 1780824542:0;git pull
+: 1780824545:0;c
+: 1780824549:0;nvim .
+: 1780824586:0;c
+: 1780824587:0;cd ..
+: 1780824587:0;c
+: 1780824593:0;rm -rf axo
+: 1780824594:0;c
+: 1780824598:0;git clone https://github.com/liagha/axo.git
+: 1780824599:0;c
+: 1780824602:0;cd axo
+: 1780824603:0;c
+: 1780824605:0;tree
+: 1780824617:0;cargo run --example basic_lexer
+: 1780824618:0;c
+: 1780824620:0;cargo run --example basic_lexer
+: 1780824703:0;c
+: 1780824708:0;catpp ~/Obsidian/Coding\ Rules.md -c "pwd" -c "tree"
+: 1780824711:0;catpp ~/Obsidian/Coding\ Rules.md
+: 1780824712:0;c
+: 1780824938:0;catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim
+: 1780824945:0;catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim ~/.zshrc
+: 1780824967:0;c
+: 1780824968:0;cd ..
+: 1780824968:0;c
+: 1780824970:0;cd
+: 1780824970:0;c
+: 1780824974:0;nvim .zshrc
+: 1780824978:0;c
+: 1780824988:0;nvim ./.config/zsh
+: 1780824993:0;nvim ./.config/zsh/
+: 1780825008:0;c
+: 1780825014:0;mkdir ./.config/zsh
+: 1780825014:0;c
+: 1780825016:0;nvim ./.config/zsh
+: 1780825109:0;c
+: 1780825112:0;source ./.zshrc
