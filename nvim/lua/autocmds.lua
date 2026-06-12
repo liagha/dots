@@ -16,6 +16,8 @@ local ext_lang = {
     zig  = "zig",
     c3   = "c3",
     odin = "odin",
+    d    = "d",
+    md   = "markdown",
 }
 
 local run_commands = {
@@ -70,6 +72,14 @@ local run_commands = {
         run   = "odin run {file}",
         build = "odin build {file}",
         check = "odin check {file}",
+    },
+    d = {
+        run   = "dmd -run {file}",
+        build = "dmd {file} -of={name}",
+        test  = "dub test",
+    },
+    markdown = {
+        run = "glow {file}",
     },
 }
 
@@ -186,6 +196,14 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     group    = group,
     callback = function()
         vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
+    end,
+})
+
+vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    group   = group,
+    pattern = "*.d",
+    callback = function()
+        vim.bo.filetype = "d"
     end,
 })
 

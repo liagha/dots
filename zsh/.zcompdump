@@ -1,4 +1,4 @@
-#files: 1024	version: 5.9
+#files: 1029	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -253,6 +253,7 @@ _comps=(
 'ctags' '_ctags'
 'ctags-exuberant' '_ctags'
 'ctags-universal' '_ctags'
+'ctr' '_ctr'
 'curl' '_curl'
 'cut' '_cut'
 'cvs' '_cvs'
@@ -306,10 +307,12 @@ _comps=(
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
 'doas' '_doas'
+'docker' '_docker'
 'docpad' '_docpad'
 'domainname' '_yp'
 'do-release-upgrade' '_do-release-upgrade'
 'dos2unix' '_dos2unix'
+'dotnet' '_dotnet'
 'drill' '_drill'
 'dropbox' '_dropbox'
 'dropdb' '_postgresql'
@@ -317,6 +320,7 @@ _comps=(
 'dsh' '_dsh'
 'dtruss' '_dtruss'
 'du' '_du'
+'dub' '_dub'
 'dvibook' '_dvi'
 'dviconcat' '_dvi'
 'dvicopy' '_dvi'
@@ -744,6 +748,7 @@ _comps=(
 'killall5' '_killall'
 'kioclient' '_kfmclient'
 'kitchen' '_kitchen'
+'kitty' '_kitty'
 'knock' '_knock'
 'konqueror' '_webbrowser'
 'kpartx' '_kpartx'
@@ -1927,20 +1932,21 @@ autoload -Uz _cargo _afew _age _alacritty _archlinux-java \
             _cf _chatblade _chcpu _chmem _choc \
             _chpasswd _chromium _clang-check _clang-format _clang-tidy \
             _cmake _coffee _conan _concourse _coredumpctl \
-            _cppcheck _curl _dad _dart _delta \
-            _dget _dhcpcd _diana _direnv _diskutil \
-            _distro_info _docpad _do-release-upgrade _ecdsautil _emacs \
-            _emulator _envdir _exportfs _fab _fail2ban-client \
-            _fail2ban-regex _fallocate _fd _ffind _firewalld \
-            _flutter _fwupdmgr _gas _ghc _ghostty \
-            _gio _gist _git _git-absorb _git-bug \
-            _git-cliff _git-flow _git-pulls _git-revise _git-smash \
-            _git-town _git-warp-time _git-wtf _glances _golang \
-            _gpgconf _grpcurl _gtk-launch _hello _hledger \
-            _hostnamectl _httpie _ibus _img2sixel _include-what-you-use \
-            _insmod _inxi _ipcmk _ipcrm _ipcs \
-            _jest _jmeter _jmeter-plugins _jonas _journalctl \
-            _jrnl _kak _kernel-install _kitchen _l3build \
+            _cppcheck _ctr _curl _dad _dart \
+            _delta _dget _dhcpcd _diana _direnv \
+            _diskutil _distro_info _docker _docpad _do-release-upgrade \
+            _dotnet _dub _ecdsautil _emacs _emulator \
+            _envdir _exportfs _fab _fail2ban-client _fail2ban-regex \
+            _fallocate _fd _ffind _firewalld _flutter \
+            _fwupdmgr _gas _ghc _ghostty _gio \
+            _gist _git _git-absorb _git-bug _git-cliff \
+            _git-flow _git-pulls _git-revise _git-smash _git-town \
+            _git-warp-time _git-wtf _glances _golang _gpgconf \
+            _grpcurl _gtk-launch _hello _hledger _hostnamectl \
+            _httpie _ibus _img2sixel _include-what-you-use _insmod \
+            _inxi _ipcmk _ipcrm _ipcs _jest \
+            _jmeter _jmeter-plugins _jonas _journalctl _jrnl \
+            _kak _kernel-install _kitchen _kitty _l3build \
             _language_codes _ldattach _libinput _lilypond _localectl \
             _loginctl _lscpu _lsipc _lslocks _lslogins \
             _lsmem _lsmod _lunchy _machinectl _mc \

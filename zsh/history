@@ -1436,7 +1436,6 @@ fn main() {\
     std::thread::sleep(std::time::Duration::from_secs(5));\
 }\
 c
-rustfmt
 rustfmt .
 rustfmt ./*.rs
 prompt examples/say.rs Cargo.toml
@@ -1681,7 +1680,6 @@ git push --set-upstream hamgit --all\
 git push --set-upstream hamgit --tags
 cargo vendor --offline
 mkdir .cargo
-nvim .cargo/config.toml
 cargo run --example say
 cargo add cranelift
 ssh 10.119.58.171 -p 8022\
@@ -2448,7 +2446,6 @@ dsad
 dsadas
 dsa
 git commit -a -m "refactor(full): modularize the codebase"
-g
 git push -u github
 rm -f dataset.json tokenizer.json config.json weights.safetensors\
 cargo run --release -- gen
@@ -2784,7 +2781,6 @@ prompt src/internal/session src/scanner/mod.rs src/parser/mod.rs src/analyzer/mo
 prompt src/emitter/mod.rs
 cargo build --release --offline --features generator\
 
-git commit -a -m "refactor"
 git commit -a -m "new"
 git config --list\
 
@@ -2947,7 +2943,6 @@ nvim src/catpp/cli.py
 nvim src/catpp/__main__.py
 nvim .gitignore
 cp /home/ali/Projects/uvea/LICENSE LICENSE
-git add .
 pipx install git+https://hamgit.ir/klcahmadi/catpp.git
 sudo cat /bin/prompt | wl-copy
 git clone https://github.com/liagha/illosio.git
@@ -3033,7 +3028,6 @@ gemini
 prompt src/analyzer STATUS.md
 sudo pacman -S gzdoom
 paru -S gzdoom
-sudo pacman -S paru
 yay -S gzdoom
 cargo build --features dialog
 cd ../chaint
@@ -3288,7 +3282,6 @@ cargo new cahill
 mv Alee Obsidian
 ll --help
 cd ..c
-cd chaint
 cd matchete
 ./target/release/axo examples/calculator.axo -v 2
 nvim src/token.rs
@@ -3339,7 +3332,6 @@ sudo /home/ali/Projects/gannet/target/debug/gannet scan --verbose
 cp ../chaint ./chaint
 git commit -a -m "fast"
 rm -rf chaint
-git pull
 \
 git diff HEAD..origin/master\
 \
@@ -3361,7 +3353,6 @@ git checkout --theirs Status.md\
 git add Status.md\
 git commit -m "Merge remote changes, accepting their version of Status.md"
 cp ../chaint ./chaint -r
-git add chaint
 sudo /home/ali/Projects/gannet/target/debug/gannet list
 cargo build --release --offline --features llvm,interpreter\
 
@@ -3429,7 +3420,6 @@ lpr /home/ali/Studies/Religion/Exam/14030310p8s5797158.pdf
 lpr /home/ali/Studies/Physics/Exam/14030327pwv86wh730.pdf
 lpr /home/ali/Studies/Religion/Exam/14031003p67xj28823.pdf
 curl -sSL https://antigravity.dev/install | sh
-curl -fsSL https://antigravity.google/cli/install.sh | bash
 curl -fsSL https://antigravity.dev/install.sh | bash
 cd cahill
 cargo add fission
@@ -3438,7 +3428,6 @@ cargo run --example counter --offline
 prompt src/instructor src/analyzer
 prompt src/instructor src/analyzer src/resolver
 git commit -a -m "refactor(instructor)"
-yay -S antigravity-cli
 sudo ./iran-unbound/iran-unbound.sh --update\
 sudo ./iran-unbound/iran-unbound.sh --install
 \
@@ -3618,7 +3607,6 @@ WGPU_BACKEND=gl WGPU_GLES_SINGLE_THREAD=1 cargo run --release
 sudo nvim /etc/pacman.d/mirrorlist
 sudo mv /etc/pacman.d/mirrorlist.bak /etc/pacman.d/mirrorlist
 sudo pacman -Sty
-sudo pacman -Syu
 sudo pacman -S vulkan-swrast
 sudo pacman -Syy vulkan-swrast
 ls /usr/share/vulkan/icd.d/
@@ -3648,7 +3636,6 @@ cat ~/Lab/fission/crates/rendering/fission-render-vello/src/lib.rs | head -100
 "print.print_integer(312+312)" | ./target/release/axo
 print "print.print_integer(312+312)" | ./target/release/axo -v 2
 cargo install rura
-cd orbyte
 rura Cargo.lock
 rur
 npm install -g @openai/codex --registry https://registry.npmmirror.com
@@ -3695,7 +3682,6 @@ prompt src -i arch
 sudo pacman -U Downloads/rustdesk-1.4.6-0-x86_64.pkg.tar.zst
 x
 git log
-cc
 print "print.print_integer(312+312)" | ./target/release/axo
 git push iran github
 ./target/release/axo -v 3
@@ -3707,7 +3693,6 @@ rtk init -g --antigravity
 rtk init --agent antigravity
 cat build_disk.sh
 killall qemu-system-x86_64
-agy
 ls /sbin
 prompt Cargo.toml x86_64-olea.json x86_64-olea.json src/arch src/memory src/console.rs src/consts.rs src/invoke
 prompt Cargo.toml x86_64-olea.json x86_64-olea.json src/arch src/memory src/console.rs src/consts.rs src/io.rs src/invoke
@@ -3727,21 +3712,18 @@ prompt demo
 prompt src/invoke/execve.rs src/invoke/clone.rs src/scheduler/task.rs src/arch/kernel/scheduling/frame.rs
 prompt src/io.rs src/arch/kernel/invoke/transition.rs
 addr2line --help
-git commit -a -m "fixes"
 ca
 ./build_disk.sh
 sudo hid
 cd proje
 git clone https://github.com/liagha/crown.gi
 git clone https://github.com/liagha/crown.git
-cargo init
 cargo new layout
 cargo new state
 cargo new protocol
 git commit -a -m "added layout\
 "
 git commit -a -m "added state"
-tree src
 cargo test
 prompt Cargo.toml state/Cargo.toml
 prompt Cargo.toml state/Cargo.toml layout/Cargo.toml protocol/Cargo.toml
@@ -3760,7 +3742,6 @@ rm /tmp/.X1-lock\
 Xephyr :2 -screen 1280x720 &\
 DISPLAY=:2 cargo run
 sudo pacman -S xterm
-ls
 whoami
 DISPLAY=:2 xterm &\
 DISPLAY=:2 xterm &\
@@ -3830,9 +3811,7 @@ prompt Cargo.toml
 git add README.md
 prompt README.md
 git commit -a -m "readme"
-nvim README.md
 git commit -a -m "readne"
-fzf
 rm -rf Projects/uvea
 prompt src backend protocol state types layout
 Xephyr -br -ac -noreset -screen 1280x720 :1 &
@@ -3875,7 +3854,6 @@ npm config get registry
 npm config set registry https://registry.npmjs.org/
 curl -fsSL https://pi.dev/install.sh | sh
 pi
-git reset --hard
 cargo new
 cargo new test
 cargo new maptest
@@ -3967,7 +3945,6 @@ yay -S telegram-desktop
 yay -S jetbrains-toolbox
 sudo pacman -U Downloads/c3-linux-static.tar.gz
 v
-cd .
 tar -xzf Downloads/c3-linux-static.tar.gz -C ~/Downloads/c3-linux
 mkdir -p ~/Downloads/c3-linux && tar -xzf ~/Downloads/c3-linux-static.tar.gz -C ~/Downloads/c3-linux
 cd c3-linux
@@ -4002,7 +3979,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 which claude
 cd Lab
 cd .zshrc
-nvim .zshrc
 curl -fsSL https://claude.ai/install.sh | bash
 sudo pacman -S nim
 git clone https://github.com/tsoding/boomer.git
@@ -4020,7 +3996,6 @@ nimble build
 \
  echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc && source ~/.zshrc
 ./boomer
-cd lab
 rm -rf boomer
 rust
 cargo
@@ -4038,7 +4013,6 @@ zsh -n ~/.zshrc
 zsh -xv
 zsh -xv | xclip -selection clipboard
 clear
-exit
 cat .zshrc | xclip -selection clipboard
 echo $SHELL\
 echo $0
@@ -4046,8 +4020,6 @@ echo $PROMPT
 grep -n "PROMPT\|PS1" ~/.zshrc
 which tv
 sudo pacman -S fzf
-nvim ./.zshrc
-source ./.zshrc
 PROMPT='%F{252}%1~%f %F{245}${vcs_info_msg_0_}%f '
 precmd\
 echo $PROMPT
@@ -4139,7 +4111,6 @@ pkill
 pkill 58585
 pkill albert
 ps
-cargo vendor
 sudo pacman -S llvm clang
 sudo pacman -Syu llvm clang
 pacman -Qs llvm\
@@ -4151,9 +4122,7 @@ export LLVM_SYS_221_PREFIX=/usr\
 \
 #\
 cargo build --release --offline --features llvm,interpreter,dialog
-./target/release/axo
 bluetoothctl
-cd pro
 cd .config
 sudo pacman -S tree
 nvim ini
@@ -4210,7 +4179,6 @@ rofi -show drun -theme /usr/share/rofi/themes/solarized.rasi
 rofi -show drun -theme /usr/share/rofi/themes/Arc-Dark.rasi
 bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme /usr/share/rofi/themes/gruvbox-dark.rasi
 codex
-nvim src/lib.rs
 nvim src/error.rs
 nvim src/register.rs
 nvim src/operand.rs
@@ -4252,7 +4220,6 @@ cd src
 nvim lib.rs
 nvim src/ir
 mv src/ir/lib.rs src/ir/mod.rs
-cargo build
 // src/main.rs\
 \
 use instructor::arch::Target;\
@@ -4342,14 +4309,12 @@ sudo pacman -S less
 git config --list
 git config --global credential.helper store
 git commit -a -m "added instructor"
-git push github
 sudo hiddify -b
 sudo -b hiddify
 cargo build --release --features llvm,interpreter,dialog\
 
 ./target/release/axo examples/map_demo.axo
 rm -rf build examples/build
-./target/release/axo examples/calculator.axo
 setxkbmap -query
 setxkbmap -layout us,ir -option grp:alt_shift_toggle
 nvim ./.config/i3/config
@@ -4408,7 +4373,6 @@ curl -o ~/.config/i3/rofi-power-menu https://raw.githubusercontent.com/1RaY-1/i3
 chmod +x ~/.config/i3/rofi-power-menu
 catpp ./.config/i3/rofi-power-menu
 ~/.config/i3/rofi-power-menu
-ز
 catpp ./.config/i3
 mkdir -p ~/.config/i3status\
 cat > ~/.config/i3status/config << 'EOF'\
@@ -4557,9 +4521,7 @@ time {\
 }\
 EOF
 s
-i3-msg reload
 exec --no-startup-id setxkbmap -layout us,ir -option grp:ctrl_space_toggle
-setxkbmap -layout us,ir -option grp:ctrl_space_toggle
 yay -S rs-pug-git
 cargo install rs-pug
 sudo pacman -S mpv
@@ -4580,24 +4542,20 @@ brightnessctl
 brightnessctl --help
 brightnessctl 50%
 brightnessctl set 50%
-nvim ~/.config/i3/config
 suspend now
 suspend --help
 suspend -h
 c3c --help
 c3c init test
 cd test
-c3c run
 yay -S c3-lsp
 c3lsp
 sudo pacman -S zig
 yay -S zig
 zig run .
 zig build.zig
-zig init
 zig run
 zig run build.zig
-zig build
 ./zig-out/bin
 cd ....
 ...
@@ -4609,7 +4567,6 @@ catpp src
 ll assets
 file assets/card_back.png
 cd dow
-cd Downloads
 cd PNG-cards-1.3
 file 10_of_clubs.png
 ll assets/cards
@@ -4634,12 +4591,10 @@ git push -u origin main
 git clone https://github.com/worka-ai/fission.git
 cd examples/counter
 cd third_party/android-activity
-cd ..
 git clone https://github.com/worka-ai/android-activity.git
 cd examples
 tree assets/
 cargo clean
-cd down
 cd SVG-cards-master
 file png/1x/back-aqua.png
 file png/2x/back-aqua.png
@@ -4649,9 +4604,6 @@ cd assets/cards && for f in heart_1.png heart_2.png heart_3.png heart_4.png hear
 cd assets/cards && for s in hearts diamonds clubs spades; do mv "${s}_1.png" "${s}_ace.png"; done
 for s in hearts diamonds clubs spades; do mv "${s}_1.png" "${s}_ace.png"; done
 file assets/cards/back-navy.png
-git commit -a -m "initial"
-git push
-shutdown now
 suspend
 catpp src Cargo.toml
 nvim src/animate.rs
@@ -4669,17 +4621,13 @@ sudo pacman -S pyright
 sudo pacman -S lua_ls
 yay -S lua_ls
 nvim ~/.config/nvim/lua/ali/lsp.lua
-catpp ~/.config/nvim
 cd .config/nvim
 nvim lua/ali/keymaps.lua
 nvim lua/ali/autocmds.lua
 cd blankjack
-catpp .
 nvim lua/ali/options.lua
 nvim lua/ali statusline.lua
 nvim lua/ali/statusline.lua
-pwd
-cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
 nvim lua/ali/colors.lua
 nvim lua/ali/plugins.lua
 nvim lua/ali/lsp.lua
@@ -4696,18 +4644,12 @@ nvim lua/lsp.lua
 brightnessctl set 15%
 brightnessctl set 5%
 nvim init.lua
-nvim lua/statusline.lua
 nvim lua/options.lua
 brightnessctl set 25%
 nvim lua/keymaps.lua
 nvim Projects/axo
 nvim Projects/axo/
-cd axo
 nvim lua/
-nvim examples
-nvim lua/autocmds.lua
-nvim lua
-nvim test.py
 rm ~/.config/nvim/lazy-lock.json\
 nvim --headless "+Lazy! sync" +qa
 sudo pacman -S tree-sitter\
@@ -4715,9 +4657,7 @@ nvim --headless "+TSInstall c cpp rust python go lua javascript typescript zig j
 nvim --headless "+TSInstall c cpp rust python go lua javascript typescript zig java bash" +qa
 yazi
 file
-nvim lua/plugins.lua
 nvim src/main.rs]
-nvim src/main.rs
 sudo pacman -S nc
 sudo pacman -S gnu-netcat
 sudo pacman -S openbsd-netcat
@@ -4748,756 +4688,178 @@ sudo ss -tlnp | grep 1234
 sudo iptables -L -n
 \
 nc -l -p 1231 -s 0.0.0.0 -v
-systemctl suspend
-sudo hiddify
 cd Projects/orbyte
-catpp ~/Obsidian/Coding\ Rules.md . -c "pwd" -c "tree"
 touch --help
 touch test.txt
 ls ~/.local/share/Trash/
 ls ~/.local/share/Trash/info
-cd
-cd nvim
 cat test2.txt
 nvim src/primary/plugin.rs
 nvim src/primary/bus.rs
 catpp src/primary
 nvim src/primary/bridge.rs
-nvim src/primary/memory.rs
 nvim src/primary/call.rs
-nvim src/primary/load.rs
 nvim src/primary/mod.rs
-tree
 catpp src/main.rs
 cargo new hub
-ll
-nvim
-nvim .
 nvim hub/src/main.rs
-nvim Cargo.toml
-nvim src/primary/handle.rs
-cd hub
-cargo run
-c
 prompt .
-: 1780495539:0;c
-: 1780495540:0;cd hub
-: 1780495541:0;c
-: 1780495545:0;catpp .
-: 1780495548:0;c
-: 1780495550:0;cargo run
-: 1780495576:0;c
-: 1780495578:0;cd ..
-: 1780495580:0;nvim src/lib.rs
-: 1780495598:0;c
-: 1780495601:0;cd hub
-: 1780495601:0;c
-: 1780495602:0;cargo run
-: 1780495608:0;nvim src/main.rs
-: 1780495649:0;c
-: 1780495650:0;cargo run
-: 1780495661:0;cd ..
-: 1780495663:0;nvim src/primary/blob.rs
-: 1780495674:0;c
-: 1780495675:0;cargo run
-: 1780495679:0;nvim src/primary/brand.rs
-: 1780495685:0;c
-: 1780495686:0;cargo run
-: 1780495691:0;nvim src/bytes/deserialize.rs
-: 1780495696:0;c
-: 1780495697:0;cargo run
-: 1780495700:0;cd hub
-: 1780495700:0;c
-: 1780495701:0;cargo run
-: 1780495719:0;mkdir -p hub/plugins
-: 1780495722:0;ll
-: 1780495725:0;rm -rf hub
-: 1780495726:0;c
-: 1780495727:0;cd ..
-: 1780495727:0;c
-: 1780495728:0;mkdir -p hub/plugins
-: 1780495728:0;c
-: 1780495730:0;cd hub
-: 1780495730:0;ll
-: 1780495731:0;c
-: 1780495732:0;cargo run
-: 1780495761:0;c
-: 1780495763:0;cd plugins
-: 1780495765:0;cargo new hello
-: 1780495769:0;nvim hello/Cargo.toml
-: 1780495781:0;cd ..
-: 1780495783:0;cd plugins
-: 1780495787:0;nvim hello/src/lib.rs
-: 1780495795:0;rm -rf hello/src/main.rs
-: 1780495795:0;c
-: 1780495982:0;cd ..
-: 1780495985:0;nvim src/main.rs
-: 1780496028:0;cd
-: 1780496030:0;cd orbyte
-: 1780496030:0;c
-: 1780496032:0;nvim src/primary/load.rs
-: 1780496047:0;cd hub
-: 1780496049:0;cd plugins
-: 1780496052:0;nvim hello/Cargo.toml
-: 1780496059:0;nvim hello/src/lib.rs
-: 1780496064:0;c
-: 1780496108:0;cd ../..
-: 1780496110:0;c
-: 1780496115:0;nvim src/primary/handle.rs
-: 1780496146:0;nvim hub/plugins/hello/src/lib.rs
-: 1780496154:0;c
-: 1780496158:0;cd hub/plugins/hello && cargo build\
+nvim src/primary/blob.rs
+nvim src/primary/brand.rs
+nvim src/bytes/deserialize.rs
+rm -rf hub
+mkdir -p hub/plugins
+cargo new hello
+rm -rf hello/src/main.rs
+cd plugins
+nvim hello/Cargo.toml
+nvim hello/src/lib.rs
+nvim ../../Cargo.toml
+Cargo.toml
+nvim Cargo.toml
+cd ../..
+nvim hub/plugins/hello/src/lib.rs
+cd hub/plugins/hello && cargo build\
 cp target/debug/libhello.so ../libhello.so
-: 1780496185:0;nvim ../../Cargo.toml
-: 1780496188:0;cd ..
-: 1780496194:0;Cargo.toml
-: 1780496197:0;nvim Cargo.toml
-: 1780496202:0;c
-: 1780496205:0;cd hub/plugins/hello && cargo build\
-cp target/debug/libhello.so ../libhello.so
-: 1780496223:0;c
-: 1780496224:0;nvim
-: 1780496228:0;c
-: 1780496230:0;cd ../..
-: 1780496230:0;c
-: 1780496231:0;cd ..
-: 1780496232:0;c
-: 1780496239:0;nvim src/primary/load.rs
-: 1780496246:0;nvim src/primary/handle.rs
-: 1780496257:0;c
-: 1780496260:0;cd hub/plugins/hello && cargo build\
-cp target/debug/libhello.so ../libhello.so
-: 1780496278:0;cd ..
-: 1780496281:0;c
-: 1780496287:0;nvim hub/plugins/hello/src/lib.rs
-: 1780496294:0;c
-: 1780496295:0;cd hub/plugins/hello && cargo build\
-cp target/debug/libhello.so ../libhello.so
-: 1780496312:0;cargo build -p hello\
+cd /home/alee/Projects/orbyte\
 cp target/debug/libhello.so hub/plugins/
-: 1780496327:0;cd /home/alee/Projects/orbyte\
+cd orbyte
+cargo build -p hello\
 cp target/debug/libhello.so hub/plugins/
-: 1780496341:0;cd hub && cargo run -- foo bar
-: 1780496347:0;c
-: 1780496363:0;cd ..
-: 1780496366:0;cd orbyte
-: 1780496367:0;c
-: 1780496369:0;nvim src/lib.rs
-: 1780496378:0;c
-: 1780496380:0;cargo build -p hello\
-cp target/debug/libhello.so hub/plugins/
-: 1780496385:0;cd hub && cargo run -- foo bar
-: 1780496390:0;nvim src/main.rs
-: 1780496402:0;c
-: 1780496403:0;cd hub && cargo run -- foo bar
-: 1780496408:0;cargo run -- foo bar
-: 1780496409:0;c
-: 1780496409:0;cargo run -- foo bar
-: 1780496431:0;c
-: 1780496445:0;cd ..
-: 1780496449:0;nvim src/primary/memory.rs
-: 1780496460:0;nvim src/primary/load.rs
-: 1780496463:0;c
-: 1780496464:0;cargo run -- foo bar
-: 1780496471:0;c
-: 1780496472:0;cd hub
-: 1780496473:0;cargo run -- foo bar
-: 1780496474:0;c
-: 1780496475:0;cargo run -- foo bar
-: 1780496487:0;cd ..
-: 1780496489:0;c
-: 1780496491:0;nvim src/primary/handle.rs
-: 1780496503:0;c
-: 1780496523:0;catpp hub src/primary
-: 1780496540:0;nvim src/primary/handle.rs
-: 1780496544:0;c
-: 1780496548:0;cd /home/alee/Projects/orbyte\
+cd hub && cargo run -- foo bar
+nvim src/primary/memory.rs
+nvim src/primary/load.rs
+cd hub
+cargo run -- foo bar
+catpp hub src/primary
+nvim src/primary/handle.rs
+cd /home/alee/Projects/orbyte\
 cargo build -p hello\
 cp target/debug/libhello.so hub/plugins/\
 cd hub && cargo run -- foo bar
-: 1780496553:0;c
-: 1780496570:0;shutdown now
-: 1780514954:0;git clone https://github.com/liagha/dots.git
-: 1780514961:0;cd dots
-: 1780514981:0;mv ~/.config/nvim nvim
-: 1780514986:0;c
-: 1780514995:0;cp nvim ~/.config/nvim
-: 1780514997:0;cp nvim ~/.config/nvim -r
-: 1780514998:0;c
-: 1780515015:0;cp ~/.config/i3 i3
-: 1780515017:0;cp ~/.config/i3 i3 -r
-: 1780515019:0;tree
-: 1780515058:0;cp ~/.zshrc zshrc
-: 1780515075:0;cp ~/.zsh_history ./zsh_history
-: 1780688886:0;source ./.zshrc
-: 1780688893:0;fzf
-: 1780688914:0;c
-: 1780689009:0;nvim ./.zshrc
-: 1780689035:0;c
-: 1780689036:0;source ./.zshrc
-: 1780689040:0;nvim ./.zshrc
-: 1780689054:0;c
-: 1780689060:0;catpp ./.zshrc
-: 1780689097:0;cargo install tgt
-: 1780689099:0;c
-: 1780689255:0;shutdown now
-: 1780753989:0;nvim ./.zshrc
-: 1780754039:0;c
-: 1780754040:0;shutdown now
-: 1780754082:0;c
-: 1780754097:0;nvim ./.zshrc
-: 1780754182:0;c
-: 1780754185:0;catpp ./.zshrc
-: 1780754230:0;nvim ./.zshrc
-: 1780754237:0;c
-: 1780754239:0;source ./.zshrc
-: 1780754240:0;c
-: 1780754251:0;cd dots
-: 1780754252:0;c
-: 1780754255:0;git pull
-: 1780754256:0;c
-: 1780754259:0;cp ~/.zsh_history ./zsh_history
-: 1780754261:0;cp ~/.zshrc zshrc
-: 1780754276:0;cp ~/.config/nvim nvim -r
-: 1780754277:0;c
-: 1780754277:0;ll
-: 1780754280:0;tree
-: 1780754288:0;mv nvim/nvim nvim
-: 1780754301:0;rm -rf nvim
-: 1780754302:0;c
-: 1780754303:0;tre
-: 1780754304:0;tree
-: 1780754305:0;c
-: 1780754306:0;tree
-: 1780754321:0;cp -r ~/.config/nvim/ nvim/
-: 1780754323:0;tree
-: 1780754325:0;c
-: 1780754329:0;git add .
-: 1780754331:0;git commit -a -m "initial"
-: 1780754334:0;git pushc
-: 1780754335:0;git push
-: 1780754338:0;c
-: 1780754450:0;cd
-: 1780754451:0;c
-: 1780754456:0;mv dots Projects/dots
-: 1780754456:0;c
-: 1780754458:0;ll
-: 1780754459:0;ls
-: 1780754459:0;c
-: 1780754459:0;ls
-: 1780754463:0;ls fvm
-: 1780754466:0;rm -rf fvm
-: 1780754466:0;c
-: 1780754469:0;ls fvm
-: 1780754470:0;ls
-: 1780754472:0;c
-: 1780754534:0;sudo hiddify
-: 1780754547:0;c
-: 1780754605:0;git reset --hard
-: 1780754605:0;c
-: 1780754631:0;cargo check --all-features
-: 1780754668:0;c
-: 1780754670:0;cargo check --all-features
-: 1780754696:0;c
-: 1780754696:0;cargo check --all-features
-: 1780754710:0;c
-: 1780754710:0;cargo check --all-features
-: 1780754717:0;c
-: 1780754718:0;cargo check --all-features
-: 1780754762:0;c
-: 1780754763:0;cargo check --all-features
-: 1780754809:0;c
-: 1780754826:0;cargo build --release --features interpreter,dialog\
-
-: 1780754841:0;c
-: 1780754844:0;./target/release/axo examples/calculator.axo
-: 1780754851:0;./target/release/axo examples/fibonacci.axo
-: 1780754863:0;c
-: 1780754869:0;./target/release/axo examples/fibonacci.axo
-: 1780754907:0;c
-: 1780754911:0;./target/release/axo
-: 1780754919:0;c
-: 1780754938:0;cargo vendor
-: 1780754945:0;c
-: 1780754955:0;git commit -a -m "fixes"
-: 1780754957:0;git push
-: 1780754958:0;c
-: 1780754961:0;git push github
-: 1780754966:0;c
-: 1780755076:0;cargo build --release --features interpreter,dialog\
-
-: 1780755090:0;c
-: 1780755091:0;./target/release/axo
-: 1780755108:0;c
-: 1780755115:0;git commit -a -m "remove(union)"
-: 1780755117:0;git push
-: 1780755117:0;c
-: 1780755118:0;git push github
-: 1780755122:0;c
-: 1780755313:0;git reset --hard
-: 1780755313:0;c
-: 1780755366:0;cd axo
-: 1780755367:0;c
-: 1780755367:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755378:0;c
-: 1780755388:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755421:0;c
-: 1780755421:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755459:0;c
-: 1780755459:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755549:0;c
-: 1780755549:0;\
+git clone https://github.com/liagha/dots.git
+mv ~/.config/nvim nvim
+cp nvim ~/.config/nvim
+cp nvim ~/.config/nvim -r
+cp ~/.config/i3 i3
+cp ~/.config/i3 i3 -r
+fzf
+cargo install tgt
+cp ~/.zsh_history ./zsh_history
+cp ~/.zshrc zshrc
+cp ~/.config/nvim nvim -r
+mv nvim/nvim nvim
+rm -rf nvim
+tre
+git commit -a -m "initial"
+git pushc
+mv dots Projects/dots
+rm -rf fvm
+ls fvm
+cargo check --all-features
+./target/release/axo examples/calculator.axo
+./target/release/axo examples/fibonacci.axo
+cargo vendor
+./target/release/axo
+git commit -a -m "remove(union)"
+\
 cargo clippy --fix --allow-dirty\
 \
 #\
 cargo clippy --fix --allow-dirty -- -W clippy::all
-: 1780755558:0;c
-: 1780755566:0;\
-cargo clippy --fix --allow-dirty\
 \
-#\
-cargo clippy --fix --allow-dirty -- -W clippy::all
-: 1780755574:0;c
-: 1780755575:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755606:0;c
-: 1780755606:0;\
 cargo clippy --fix --allow-dirty --allow-staged -- -W clippy::all -W clippy::pedantic
-: 1780755613:0;c
-: 1780755615:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755631:0;c
-: 1780755632:0;cargo clippy -- -W clippy::all -W clippy::pedantic 2>&1 | head -50
-: 1780755648:0;c
-: 1780755649:0;cargo clippy --fix --allow-dirty -- -W clippy::all -W clippy::pedantic 2>&1
-: 1780755662:0;c
-: 1780755673:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780755763:0;c
-: 1780755764:0;cargo clippy --fix
-: 1780755769:0;cargo clippy --fix --allow-dirty
-: 1780755776:0;c
-: 1780755776:0;cargo clippy --fix --allow-dirty
-: 1780755794:0;c
-: 1780755795:0;cargo clippy --fix --allow-dirty
-: 1780755866:0;c
-: 1780755867:0;cargo clippy --fix --allow-dirty
-: 1780755895:0;c
-: 1780755896:0;cargo clippy --fix --allow-dirty
-: 1780755910:0;c
-: 1780755910:0;cargo clippy --fix --allow-dirty
-: 1780755952:0;c
-: 1780756000:0;cargo clippy --fix --allow-dirty
-: 1780756022:0;c
-: 1780756022:0;cargo clippy --fix --allow-dirty
-: 1780756050:0;c
-: 1780756050:0;cargo clippy --fix --allow-dirty
-: 1780756091:0;c
-: 1780756092:0;cargo clippy --fix --allow-dirty
-: 1780756112:0;c
-: 1780756112:0;cargo clippy --fix --allow-dirty
-: 1780756135:0;c
-: 1780756135:0;cargo clippy --fix --allow-dirty
-: 1780756169:0;c
-: 1780756170:0;cargo clippy --fix --allow-dirty
-: 1780756362:0;c
-: 1780756363:0;cargo clippy --fix --allow-dirty
-: 1780756378:0;c
-: 1780756378:0;cargo clippy --fix --allow-dirty
-: 1780756385:0;c
-: 1780756385:0;cargo clippy --fix --allow-dirty
-: 1780756423:0;c
-: 1780756423:0;cargo clippy --fix --allow-dirty
-: 1780756448:0;c
-: 1780756449:0;cargo clippy --fix --allow-dirty
-: 1780756535:0;c
-: 1780756535:0;cargo clippy --fix --allow-dirty
-: 1780756556:0;c
-: 1780756557:0;cargo clippy --fix --allow-dirty
-: 1780756573:0;c
-: 1780756574:0;cargo clippy --fix --allow-dirty
-: 1780756587:0;c
-: 1780756587:0;cargo clippy --fix --allow-dirty
-: 1780756605:0;c
-: 1780756605:0;cargo clippy --fix --allow-dirty
-: 1780756638:0;c
-: 1780756639:0;cargo clippy --fix --allow-dirty
-: 1780756646:0;cargo clippy -- -W clippy::all -W clippy::pedantic
-: 1780756804:0;c
-: 1780756808:0;cargo build --release --features interpreter,dialog\
+cargo clippy -- -W clippy::all -W clippy::pedantic 2>&1 | head -50
+cargo clippy --fix --allow-dirty -- -W clippy::all -W clippy::pedantic 2>&1
+cargo clippy --fix
+cargo clippy --fix --allow-dirty
+cargo clippy -- -W clippy::all -W clippy::pedantic
+cargo build --release --features interpreter,dialog\
 
-: 1780756821:0;c
-: 1780756825:0;./target/release/axo examples/fibonacci.axo -v 2
-: 1780757987:0;c
-: 1780757987:0;cd
-: 1780757988:0;c
-: 1780757988:0;https://github.com/maestro-os/maestro.git
-: 1780757992:0;git clone https://github.com/maestro-os/maestro.git
-: 1780758005:0;cd kernel
-: 1780758005:0;c
-: 1780758010:0;cd maestro/c
-: 1780758012:0;cd maestro/
-: 1780758012:0;c
-: 1780758016:0;cargo run
-: 1780758439:0;c
-: 1780758439:0;cargo run
-: 1780758629:0;c
-: 1780758630:0;cargo run
-: 1780758632:0;c
-: 1780758632:0;ll
-: 1780758636:0;cd kernel
-: 1780758636:0;c
-: 1780758637:0;cargo run
-: 1780758723:0;c
-: 1780758724:0;cargo run
-: 1780758745:0;c
-: 1780758751:0;cd ..
-: 1780758752:0;c
-: 1780758758:0;ls
-: 1780758762:0;cd kernel
-: 1780758762:0;c
-: 1780758763:0;ls
-: 1780758768:0;./scripts/qemu.sh
-: 1780758786:0;sudo pacman -S qemu-system-x86
-: 1780758808:0;c
-: 1780758810:0;./scripts/qemu.sh
-: 1780758818:0;sudo pacman -S grub
-: 1780758824:0;c
-: 1780758825:0;./scripts/qemu.sh
-: 1780758836:0;sudo pacman -S xorriso
-: 1780758840:0;c
-: 1780758841:0;./scripts/qemu.sh
-: 1780758847:0;ls
-: 1780758850:0;cd ..
-: 1780758851:0;ls
-: 1780758853:0;cd kernel
-: 1780758854:0;c
-: 1780758854:0;ls
-: 1780758860:0;cd scripts
-: 1780758860:0;c
-: 1780758861:0;ls
-: 1780758865:0;./qemu.sh
-: 1780758879:0;cd ..
-: 1780758880:0;c
-: 1780758882:0;./scripts/qemu.sh
-: 1780758901:0;c
-: 1780758907:0;catpp scripts/qemu.sh
-: 1780758916:0;cat scripts/iso/boot/grub
-: 1780758917:0;c
-: 1780758940:0;cd .
-: 1780758942:0;cd ..
-: 1780758943:0;c
-: 1780758944:0;nvim .
-: 1780758959:0;c
-: 1780758961:0;cargo run
-: 1780758963:0;cd kernel
-: 1780758963:0;c
-: 1780758965:0;cargo run
-: 1780758981:0;sudo pacman -S mtools
-: 1780758986:0;c
-: 1780758990:0;./scripts/qemu.sh
-: 1780759119:0;nvim .cargo/config.toml
-: 1780759130:0;c
-: 1780759131:0;cargo run
-: 1780759136:0;./scripts/qemu.sh
-: 1780759150:0;c
-: 1780759151:0;paru -S x86_64-elf-binutils
-: 1780759156:0;sudo pacman -S paru
-: 1780759159:0;c
-: 1780759161:0;paru -S x86_64-elf-binutils
-: 1780759172:0;c
-: 1780759173:0;yay -S x86_64-elf-binutils
-: 1780759284:0;sudo pacman -S
-: 1780759298:0;sudo pacman -S x86_64-elf-binutils
-: 1780759303:0;c
-: 1780759491:0;./scripts/qemu.sh
-: 1780759493:0;c
-: 1780759498:0;cargo run
-: 1780759531:0;c
-: 1780759531:0;QEMUFLAGS="-display gtk" cargo run
-: 1780759548:0;c
-: 1780759549:0;QEMUFLAGS="-display sdl" cargo run
-: 1780759555:0;qemu-system-x86_64 -display help
-: 1780759562:0;c
-: 1780759563:0;sudo pacman -S qemu-ui-sdl\
+./target/release/axo examples/fibonacci.axo -v 2
+https://github.com/maestro-os/maestro.git
+git clone https://github.com/maestro-os/maestro.git
+cd maestro/c
+cd maestro/
+sudo pacman -S qemu-system-x86
+sudo pacman -S grub
+sudo pacman -S xorriso
+cd scripts
+./qemu.sh
+catpp scripts/qemu.sh
+cat scripts/iso/boot/grub
+cd .
+cd kernel
+sudo pacman -S mtools
+nvim .cargo/config.toml
+sudo pacman -S paru
+paru -S x86_64-elf-binutils
+yay -S x86_64-elf-binutils
+sudo pacman -S
+sudo pacman -S x86_64-elf-binutils
+./scripts/qemu.sh
+qemu-system-x86_64 -display help
+sudo pacman -S qemu-ui-sdl\
 #\
 sudo pacman -S qemu-ui-gtk
-: 1780759571:0;c
-: 1780759575:0;QEMUFLAGS="-display gtk" cargo run
-: 1780759613:0;c
-: 1780759616:0;QEMUFLAGS="-display sdl" cargo run
-: 1780759666:0;c
-: 1780759682:0;sudo pacman -S qemu-desktop
-: 1780759694:0;c
-: 1780759702:0;cargo run
-: 1780759723:0;c
-: 1780759763:0;cd
-: 1780759764:0;c
-: 1780759767:0;rm -rf maestro
-: 1780759767:0;c
-: 1780759771:0;ll
-: 1780759772:0;c
-: 1780759789:0;git commit -a -m "refactor"
-: 1780759790:0;c
-: 1780759791:0;git push
-: 1780759791:0;c
-: 1780759794:0;git push github
-: 1780759797:0;c
-: 1780759810:0;cd axo
-: 1780759811:0;c
-: 1780759825:0;catpp src/analyzer src/resolver
-: 1780759836:0;catpp src/resolver
-: 1780759841:0;catpp src/analyzer
-: 1780761023:0;c
-: 1780761025:0;shutdown now
-: 1780765675:0;cd axo
-: 1780765676:0;cd ..
-: 1780765676:0;c
-: 1780765681:0;mv axo axo-archive
-: 1780765682:0;c
-: 1780765775:0;catpp ~/.config/i3
-: 1780765859:0;c
-: 1780765861:0;cd
-: 1780765874:0;c
-: 1780765878:0;nvim ~/.config/i3/config
-: 1780765886:0;c
-: 1780765949:0;nvim ~/.config/i3/config
-: 1780766043:0;c
-: 1780766044:0;sudo pacman -S hyprlock
-: 1780766049:0;c
-: 1780766053:0;nvim ~/.config/i3/config
-: 1780766075:0;c
-: 1780766087:0;nvim ~/.config/i3/config
-: 1780766095:0;c
-: 1780766100:0;nvim ~/.config/i3/config
-: 1780766158:0;c
-: 1780766167:0;nvim ~/.config/i3/config
-: 1780766174:0;c
-: 1780766301:0;cd pro
-: 1780766301:0;c
-: 1780766303:0;ls
-: 1780766308:0;cd axo-archive
-: 1780766308:0;c
-: 1780766310:0;git commit -a -m "refactor"
-: 1780766316:0;git add chaint
-: 1780766316:0;c
-: 1780766318:0;git commit -a -m "refactor"
-: 1780766319:0;c
-: 1780766321:0;git push github
-: 1780766334:0;c
-: 1780766336:0;git commit -a -m "refactor"
-: 1780766337:0;git push github
-: 1780766377:0;c
-: 1780766378:0;cd ..
-: 1780766378:0;c
-: 1780766390:0;git clone https://github.com/liagha/axo.git
-: 1780766395:0;c
-: 1780766397:0;cd axo
-: 1780766397:0;c
-: 1780766399:0;ls
-: 1780766400:0;tree
-: 1780766400:0;c
-: 1780766403:0;cargo init
-: 1780766404:0;ls
-: 1780766409:0;git add Cargo.toml src
-: 1780766409:0;g
-: 1780766410:0;c
-: 1780766421:0;git commit -a -m "new(cargo)"
-: 1780766422:0;c
-: 1780766423:0;git push
-: 1780766427:0;c
-: 1780766554:0;nvim ~/.config/i3/config
-: 1780766574:0;c
-: 1780766597:0;nvim ~/.config/i3/config
-: 1780766608:0;c
-: 1780766621:0;nvim ~/.config/i3/config
-: 1780766648:0;c
-: 1780766705:0;\
+QEMUFLAGS="-display gtk" cargo run
+QEMUFLAGS="-display sdl" cargo run
+sudo pacman -S qemu-desktop
+cargo run
+rm -rf maestro
+catpp src/analyzer src/resolver
+catpp src/resolver
+catpp src/analyzer
+mv axo axo-archive
+catpp ~/.config/i3
+sudo pacman -S hyprlock
+cd pro
+git add chaint
+git commit -a -m "refactor"
+git push github
+cargo init
+git add Cargo.toml src
+g
+git commit -a -m "new(cargo)"
+\
 ls /sys/class/backlight/
-: 1780766712:0;c
-: 1780766762:0;nvim ~/.config/i3/config
-: 1780766774:0;c
-: 1780766775:0;nvim ~/.config/i3/config
-: 1780766779:0;c
-: 1780766837:0;cd chaint
-: 1780766838:0;c
-: 1780766857:0;catpp src/formation src/lib.rs src/peek.rs
-: 1780767211:0;c
-: 1780767338:0;nvim .
-: 1780767518:0;shutdown now
-: 1780767875:0;cd axo
-: 1780767876:0;c
-: 1780768204:0;sudo hiddify
-: 1780768213:0;c
-: 1780769261:0;nvim src/chain/mod.rs
-: 1780769412:0;nvim src/chain/links.rs
-: 1780769454:0;c
-: 1780769463:0;nvim src/chain/chain.rs
-: 1780769467:0;c
-: 1780770156:0;nvim src/chain/chain.rs
-: 1780770161:0;c
-: 1780770167:0;nvim src/chain/links.rs
-: 1780770187:0;cargo build
-: 1780770188:0;c
-: 1780770200:0;cargo build
-: 1780771142:0;c
-: 1780771173:0;nvim ~/.config/i3/config
-: 1780771233:0;c
-: 1780771244:0;nvim ~/.config/i3/config
-: 1780771272:0;c
-: 1780771370:0;nvim ../axo-archive/src/scanner/formation/mod.rs
-: 1780771476:0;c
-: 1780771484:0;catpp ~/Obsidian/Coding\ Rules.md . -c "pwd" -c "tree"
-: 1780771488:0;catpp ~/Obsidian/Coding\ Rules.md -c "pwd" -c "tree"
-: 1780771489:0;c
-: 1780771509:0;catpp src/
-: 1780771553:0;nvim src/chain/chain.rs
-: 1780771557:0;c
-: 1780771563:0;nvim src/chain/links.rs
-: 1780771570:0;c
-: 1780771898:0;catpp src/
-: 1780772106:0;c
-: 1780772111:0;nvim ../axo-archive/src/scanner/formation/mod.rs
-: 1780773021:0;c
-: 1780773023:0;shutdown now
-: 1780824397:0;catpp ./.zshrc
-: 1780824486:0;nvim ./.zshrc
-: 1780824508:0;c
-: 1780824510:0;source ./.zshrc
-: 1780824511:0;c
-: 1780824538:0;cd axo
-: 1780824542:0;git pull
-: 1780824545:0;c
-: 1780824549:0;nvim .
-: 1780824586:0;c
-: 1780824587:0;cd ..
-: 1780824587:0;c
-: 1780824593:0;rm -rf axo
-: 1780824594:0;c
-: 1780824598:0;git clone https://github.com/liagha/axo.git
-: 1780824599:0;c
-: 1780824602:0;cd axo
-: 1780824603:0;c
-: 1780824605:0;tree
-: 1780824617:0;cargo run --example basic_lexer
-: 1780824618:0;c
-: 1780824620:0;cargo run --example basic_lexer
-: 1780824703:0;c
-: 1780824708:0;catpp ~/Obsidian/Coding\ Rules.md -c "pwd" -c "tree"
-: 1780824711:0;catpp ~/Obsidian/Coding\ Rules.md
-: 1780824712:0;c
-: 1780824938:0;catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim
-: 1780824945:0;catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim ~/.zshrc
-: 1780824967:0;c
-: 1780824968:0;cd ..
-: 1780824968:0;c
-: 1780824970:0;cd
-: 1780824970:0;c
-: 1780824974:0;nvim .zshrc
-: 1780824978:0;c
-: 1780824988:0;nvim ./.config/zsh
-: 1780824993:0;nvim ./.config/zsh/
-: 1780825008:0;c
-: 1780825014:0;mkdir ./.config/zsh
-: 1780825014:0;c
-: 1780825016:0;nvim ./.config/zsh
-: 1780825109:0;c
-: 1780825112:0;source ./.zshrc
-: 1780842305:0;c
-: 1780842309:0;source ./.zshrc
-: 1780842309:0;c
-: 1780842324:0;ls ./.config/zsh
-: 1780842333:0;nvim ./.config/zsh/history
-: 1780842340:0;c
-: 1780842348:0;nvim ./.zsh_functions
-: 1780842351:0;c
-: 1780842357:0;nvim ./.zsh_history
-: 1780842360:0;c
-: 1780842446:0;nvim ./.zshrc
-: 1780842456:0;c
-: 1780842467:0;cd axo
-: 1780842467:0;c
-: 1780842515:0;nvim .
-: 1780842522:0;c
-: 1780842549:0;catpp src examples Cargo.toml
-: 1780842550:0;ls
-: 1780842554:0;c
-: 1780843009:0;catpp src examples Cargo.toml
-: 1780843649:0;c
-: 1780843650:0;catpp src examples Cargo.toml
-: 1780843652:0;c
-: 1780844037:0;cargo run --example=basic_lexer
-: 1780844060:0;c
-: 1780844063:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
-: 1780844063:0;c
-: 1780844166:0;cargo run --example=basic_lexer
-: 1780844177:0;c
-: 1780844177:0;cargo run --example=basic_lexer
-: 1780844267:0;c
-: 1780844273:0;nvim examples/basic_lexer.rs
-: 1780844308:0;c
-: 1780844309:0;cargo run --example=basic_lexer
-: 1780844318:0;nvim examples/basic_lexer.rs
-: 1780844328:0;c
-: 1780844329:0;cargo run --example=basic_lexer
-: 1780844331:0;nvim examples/basic_lexer.rs
-: 1780844345:0;cargo run --example=basic_lexer
-: 1780844349:0;nvim examples/basic_lexer.rs
-: 1780844396:0;cargo run --example=basic_lexer
-: 1780844396:0;c
-: 1780844397:0;nvim examples/basic_lexer.rs
-: 1780844404:0;cargo run --example=basic_lexer
-: 1780844405:0;nvim examples/basic_lexer.rs
-: 1780844409:0;cargo run --example=basic_lexer
-: 1780844410:0;c
-: 1780844411:0;nvim examples/basic_lexer.rs
-: 1780844417:0;c
-: 1780844418:0;cargo run --example=basic_lexer
-: 1780844420:0;c
-: 1780844936:0;cargo run --example=basic_lexer
-: 1780845002:0;c
-: 1780845004:0;git commit -a -m "fixes"
-: 1780845005:0;c
-: 1780845202:0;cargo run --example=basic_lexer
-: 1780845324:0;c
-: 1780845325:0;git commit -a -m "fixes"
-: 1780845325:0;c
-: 1780845399:0;cargo run --example=scanner
-: 1780845412:0;c
-: 1780845412:0;cargo run --example=scanner
-: 1780845418:0;c
-: 1780845418:0;cargo run --example=scanner
-: 1780845428:0;c
-: 1780845431:0;catpp src examples Cargo.toml
-: 1780845442:0;c
-: 1780845443:0;cargo run --example=scanner
-: 1780845707:0;c
-: 1780845708:0;cargo run --example=scanner
-: 1780845821:0;c
-: 1780845823:0;git commit -a -m "fixes"
-: 1780845824:0;c
-: 1780845825:0;git push
-: 1780845828:0;c
-: 1780845840:0;shutdown now
-: 1780861827:0;c
-: 1780861838:0;catpp ~/.config/nvim
-: 1780861858:0;catpp ~/.config/nvim Obsidian/Coding\ Rules.md
-: 1780861942:0;nvim .config/nvim/lua/autocmds.lua
-: 1780861948:0;c
-: 1780861956:0;nvim .config/nvim/lua/lsp.lua
-: 1780861962:0;c
-: 1780861970:0;nvim .config/nvim/lua/plugins.lua
-: 1780861977:0;c
-: 1780862010:0;sudo pacman -S odin ols odinfmt
-: 1780862063:0;c
-: 1780862064:0;sudo pacman -S lmms ardour pipewire pipewire-jack pipewire-pulse wireplumber qpwgraph carla
-: 1780862082:0;c
-: 1780862119:0;sudo hiddify
-: 1780862126:0;c
-: 1780862127:0;sudo pacman -S lmms ardour pipewire pipewire-jack pipewire-pulse wireplumber qpwgraph carla
-: 1780862155:0;c
-: 1780862160:0;cd lab
-: 1780862161:0;c
-: 1780862165:0;nvim .
-: 1780862241:0;c
-: 1780862242:0;\
+cd chaint
+catpp src/formation src/lib.rs src/peek.rs
+nvim src/chain/mod.rs
+cargo build
+nvim ~/.config/i3/config
+catpp ~/Obsidian/Coding\ Rules.md . -c "pwd" -c "tree"
+nvim src/chain/chain.rs
+nvim src/chain/links.rs
+catpp src/
+nvim ../axo-archive/src/scanner/formation/mod.rs
+catpp ./.zshrc
+git pull
+rm -rf axo
+git clone https://github.com/liagha/axo.git
+cargo run --example basic_lexer
+catpp ~/Obsidian/Coding\ Rules.md -c "pwd" -c "tree"
+catpp ~/Obsidian/Coding\ Rules.md
+catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim
+catpp ~/Obsidian/Coding\ Rules.md ~/.config/nvim ~/.zshrc
+nvim .zshrc
+nvim ./.config/zsh/
+mkdir ./.config/zsh
+nvim ./.config/zsh
+source ./.zshrc
+ls ./.config/zsh
+nvim ./.config/zsh/history
+nvim ./.zsh_functions
+nvim ./.zsh_history
+nvim ./.zshrc
+nvim examples/basic_lexer.rs
+cargo run --example=basic_lexer
+catpp src examples Cargo.toml
+catpp ~/.config/nvim
+nvim .config/nvim/lua/lsp.lua
+sudo pacman -S odin ols odinfmt
+sudo pacman -S lmms ardour pipewire pipewire-jack pipewire-pulse wireplumber qpwgraph carla
+\
 sudo reflector --latest 20 --sort rate --save /etc/pacman.d/mirrorlist\
 \
 #\
@@ -5505,25 +4867,10 @@ sudo pacman -Syy\
 \
 #\
 sudo pacman -S lmms ardour pipewire pipewire-jack pipewire-pulse wireplumber qpwgraph carla
-: 1780862446:0;cd lab
-: 1780862447:0;cd odin-start
-: 1780862448:0;c
-: 1780862457:0;odin run main.odin
-: 1780862463:0;odin run main.odin -file
-: 1780862464:0;c
-: 1780862465:0;odin run main.odin -file
-: 1780862483:0;c
-: 1780862493:0;odin run main.odin -file
-: 1780862494:0;c
-: 1780862501:0;nvim .
-: 1780862505:0;odin run main.odin -file
-: 1780862515:0;c
-: 1780862516:0;odin report | grep -i "current_dir\|getwd\|cwd"
-: 1780862520:0;odin report | grep -i "os\."
-: 1780862542:0;c
-: 1780862547:0;odin run main.odin -file
-: 1780862559:0;c
-: 1780862579:0;\
+odin run main.odin
+odin report | grep -i "current_dir\|getwd\|cwd"
+odin report | grep -i "os\."
+\
 yay -S vital-synth surge-xt zynaddsubfx sfizz\
 \
 #\
@@ -5536,45 +4883,1297 @@ yay -S dragonfly-reverb\
 \
 #\
 yay -S salamander-grand-piano-sfz
-: 1780862596:0;nvim odin-start/main.odin
-: 1780862600:0;c
-: 1780862603:0;odin run main.odin -file
-: 1780862624:0;c
-: 1780862631:0;cd ..
-: 1780862642:0;odin run ./odin-start/main.odin -file
-: 1780862649:0;c
-: 1780862658:0;cd odin-start
-: 1780862658:0;c
-: 1780862662:0;nvim main
-: 1780862665:0;c
-: 1780862666:0;nvim main.odin
-: 1780863023:0;c
-: 1780863038:0;cd ..
-: 1780863038:0;c
-: 1780863039:0;cd
-: 1780863039:0;c
-: 1780863041:0;catpp ~/.config/nvim Obsidian/Coding\ Rules.md
-: 1780863194:0;c
-: 1780863197:0;cd nvim
-: 1780863198:0;pwd
-: 1780863199:0;c
-: 1780863203:0;nvim lua/statusline.lua
-: 1780863209:0;c
-: 1780863221:0;nvim lua/plugins.lua
-: 1780863257:0;c
-: 1780863261:0;cd odin-start
-: 1780863261:0;c
-: 1780863263:0;nvim main.odin
-: 1780863388:0;c
-: 1780863389:0;ls
-: 1780863392:0;rm -rf test.txt
-: 1780863392:0;c
-: 1780863571:0;ls
-: 1780863579:0;cd
-: 1780863582:0;cd dots
-: 1780863582:0;c
-: 1780863592:0;rm -rf *
-: 1780863595:0;c
-: 1780863600:0;cp -r ~/.config/nvim/ nvim/
-: 1780863613:0;cp -r ~/.config/i3 i3/
-: 1780863620:0;cp -r ~/.config/zsh zsh
+nvim odin-start/main.odin
+odin run main.odin -file
+odin run ./odin-start/main.odin -file
+nvim main
+catpp ~/.config/nvim Obsidian/Coding\ Rules.md
+nvim lua/statusline.lua
+nvim lua/plugins.lua
+cd odin-start
+nvim main.odin
+rm -rf test.txt
+cd dots
+cp -r ~/.config/nvim/ nvim/
+cp -r ~/.config/i3 i3/
+cp -r ~/.config/zsh zsh
+cp ~/.zshrc ./zshrc
+cp ~/.zsh_history .zsh_history
+rm -rf nvim/lazy-lock.json
+rm -rf i3/rofi-power-menu
+cp ~/.zsh_history zsh_history
+rm -rf .zsh_history
+git add .
+shutdown now
+cargo install treader
+sudo pacman -S kitty
+hey
+exit
+sudo pacman -S chromium
+sudo pacman -Sy chromium
+catpp .zshrc ./.config/zsh
+catpp .zshrc ./.config/zsh/
+catpp .zshrc ./.config/zsh/ -i ./.config/zsh/history
+tmux -all
+sudo pacman -Sy tmux
+sudo pacman -Sy tmux touchgg libinput
+sudo pacman -Sy tmux touchegg libinput
+libinput list-devices | grep -A 20 TouchPad
+sudo mkdir -p /etc/X11/xorg.conf.d\
+sudo nano /etc/X11/xorg.conf.d/30-touchpad.conf
+catpp .zshrc ./.config/zsh Obsidian/Coding\ Rules.md -i ./.config/zsh/history
+nvim README.md
+nvim .config/nvim/lua/keymaps.lua
+catpp ./.config/nvim Obsidian/Coding\ Rules.md -i ./.config/zsh/history
+cd Downloads
+nvim fizik56yari.pdf
+nvim Downloads/fizik56yari.pdf
+nvim Downloads/
+tgt
+Telegram
+catpp ~/Obsidian/Coding\ Rules.md ./.config/i3
+i3-msg reload
+nvim .config/i3/config
+i3 -c ~/.config/i3/config
+catpp ~/Obsidian/Coding\ Rules.md ./.config/nvim
+nvim .config/nvim/lua/plugins.lua
+nvim .config/nvim/lua/autocmds.lua
+cd alee
+cp dots/nvim
+rm -rf ~/.config/i3
+rm -rf ~/.config/nvim
+cp dots/nvim ~/.config/nvim
+cp dots/nvim ~/.config/nvim -r
+cp dots/i3 ~/.config/i3 -r
+nvim src/scanner/chains.rs
+cargo run --example=scanner
+cargo run -- examples/scanner.rs
+rm -rf examples
+cat examples/scanner.axo
+nvim examples/scanner.axo
+nvim src/chain/combinator.rs
+nvim src/parser/mod.rs
+nvim src/parser/chains.rs
+grep "impl<'a>" ./**
+grep "impl<'a>" ./**/**
+catpp examples src/main.rs
+catpp examples src Cargo.toml
+\
+dig antigravity.google +short\
+\
+#\
+#\
+ping antigravity.google\
+\
+#\
+curl -I https://antigravity.google.com/cli/install.sh
+sudo pacman -Sy dig
+\
+curl -v https://antigravity.google/cli/install.sh\
+\
+#\
+# Some internal tools only work from corp-issued machines
+gcloud auth print-identity-token 2>/dev/null
+curl -H "Authorization: Bearer $(gcloud auth print-identity-token)" https://antigravity.google/cli/install.sh\
+
+\
+apt-cache search antigravity\
+# Or internal Piper/cider paths
+sudo pacman -Q antigravity
+\
+curl -v https://antigravity.google/ 2>&1\
+\
+#\
+curl -s -o /dev/null -w "%{http_code}" https://antigravity.google/\
+\
+#\
+curl -s https://antigravity.google/.well-known/openapi.json\
+curl -s https://antigravity.google/api/v1/
+\
+curl -s https://antigravity.google/ -o antigravity.html\
+head -100 antigravity.html\
+\
+#\
+#\
+xdg-open https://antigravity.google/ 2>/dev/null || open https://antigravity.google/ 2>/dev/null\
+\
+#\
+curl -s https://antigravity.google/sso/\
+curl -s https://antigravity.google/auth/\
+curl -s https://antigravity.google/login/\
+\
+#\
+curl -s https://antigravity.google/cli/
+curl -v https://antigravity.google/ 2>&1 | head -30
+sudo pacman -Syu
+yay -S antigravity-bin
+yay -S antigravity-cli
+curl -I https://antigravity.google/cli/install.sh
+curl -sSL https://raw.githubusercontent.com/BOTOOM/google-antigravity-bin-arch/main/install_antigravity | bash
+agy
+ALACRITTY_LOG
+printf ALACRITTY_LOG
+sudo pacman -R chromium
+sudo pacman -R antigravity
+sudo pacman -R antigravity-cli
+yay -R antigravity-cli
+rm -rf ~/.cache/yay/antigravity-cli
+\
+sudo rm -f /usr/bin/antigravity\
+sudo rm -f /usr/local/bin/antigravity\
+\
+#\
+sudo rm -rf /opt/antigravity\
+sudo rm -rf ~/.config/antigravity\
+sudo rm -rf ~/.cache/antigravity\
+sudo rm -rf ~/.local/share/antigravity
+curl -fsSL https://antigravity.google/cli/install.sh | bash
+catpp examples src Cargo.toml -c "cargo run -- examples/scanner.axo"
+catpp -c "cargo run -- examples/scanner.axo"
+catpp Cargo.toml -c "cargo run -- examples/scanner.axo"
+rustfmt
+rustfmt src/scanner
+rustfmt src/scanner/**
+nvim .config/nvim/lua/
+nvim rustfmt.toml
+rustup toolchain install nightly-x86_64-unknown-linux-gnu
+rustup run nightly rustfmt src/lib.rs
+catpp examples -c "cargo run -- examples/scanner.axo"
+git commit -a -m "fixes"
+cp ../axo-archive/src/reporter ./src/reporter
+cp ../axo-archive/src/reporter ./src/reporter -r
+tree
+tree src
+nvim src/lib.rs
+cp ../axo-archive/src/format/reporter.rs ./src/format/reporter.rs
+cd axo-archive
+git commit -a -m "add(reporter)"
+rm -rf c3-start
+cd nvim
+pwd
+nvim lua/autocmds.lua
+nvim lua
+sudo pacman -S cheese
+sudo pacman -Sy cheese
+sudo nano /etc/pacman.conf
+sudo nvim /etc/pacman.conf
+sudo pacman -S guvcview
+cd c3start
+c3c run -P
+c3c run -L
+c3c help
+c3c run -E
+catpp .
+cc
+sudo hiddify
+c3c run -- build
+c3c run -- build/
+c3c run -- ./build/
+c3c run -- $(cwd)
+c3c run
+ls build
+nvim src/main.c3
+c3c run -- $(pwd)
+c3c run -- $(pwd)/build
+cd Lab/cstart
+mkdir build
+rm build
+rm build -r
+cd cstart
+nvim main.c
+cd
+ll .local/share/Trash
+rm -rf .local/share/Trash/*
+ll .local/share/Trash/files
+ll .local/share/Trash/
+./main
+sudo pacman -S time
+/bin/time -v ./main
+cd ..
+treader Downloads/fizik56yari.pdf
+nvim test.rs
+nvim test.py
+rm -rf my_video-
+rm -rf my_video-1.mkv my_video-2.mkv
+cd down
+ll
+rm -rf *
+cd lab
+rm -rf build.zig build.zig.zon src/
+cd zigstart
+zig init
+ls
+zig build
+systemctl suspend
+\
+iicc
+catpp src/scanner examples
+git reset --hard
+cargo run -- examples/scanner.axo
+nvim src/main.rs
+rustfmt src/lib.rs
+rustup run nightly rustfmt src/main.rs
+nvim
+nvim c
+nvim examples
+cargo run -- examples/scanner
+nvim examples/scanner
+nvim examples/scanner/punctuation.axo
+nvim src/scanner/mod.rs
+cd axo
+catpp src/parser
+git commit -a -m "remove(parser)"
+nvim .
+cargo run -- examples/scanner/full.axo
+git add src/parser
+git commit -a -m "refactor(scanner)"
+git push
+setxkbmap -layout us,ir -option grp:ctrl_space_toggle
+ز
+catpp src/scanner
+catpp src/scanner src/parser/mod.rs
+catpp src/scanner src/parser/mod.rs src/main.rs
+c
+cargo run -- examples/scanner/punctuation.axo
+cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781025086:0;c
+: 1781025224:0;cd axo
+: 1781025225:0;c
+: 1781025235:0;catpp src/parser/mod.rs src/main.rs
+: 1781025348:0;catpp src/chain/
+: 1781025437:0;c
+: 1781025439:0;cargo run -- examples/scanner/punctuation.axo
+: 1781025449:0;c
+: 1781025453:0;cargo run -- examples/scanner/full.axo
+: 1781030098:0;c
+: 1781030101:0;nvim .
+: 1781030117:0;c
+: 1781030118:0;cargo run -- examples/scanner/full.axo
+: 1781030122:0;nvim src/main.rs
+: 1781030138:0;c
+: 1781030139:0;cargo run -- examples/scanner/full.axo
+: 1781030140:0;c
+: 1781030153:0;catpp src
+: 1781030205:0;git commit -a -m "refactor(scanner)"
+: 1781030206:0;c
+: 1781030206:0;git push
+: 1781030209:0;c
+: 1781030337:0;cargo run -- examples/scanner/full.axo
+: 1781030354:0;c
+: 1781030356:0;catpp src
+: 1781030375:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781030375:0;c
+: 1781030431:0;cargo run -- examples/scanner/full.axo
+: 1781030432:0;c
+: 1781030539:0;cd lab
+: 1781030539:0;c
+: 1781030540:0;\
+git clone https://github.com/tegal1337/telegram-cli.git\
+cd telegram-cli\
+\
+#\
+make setup\
+\
+#\
+make run
+: 1781030600:0;cargo run -- examples/scanner/full.axo
+: 1781030608:0;/bin/time -v cargo run -- examples/scanner/full.axo
+: 1781030617:0;/bin/time -v cargo run -- examples/scanner/punctuation.axo
+: 1781030629:0;/bin/time -v cargo run -- examples/scanner/full.axo
+: 1781030631:0;/bin/time -v cargo run -- examples/scanner/punctuation.axo
+: 1781030637:0;c
+: 1781030895:0;catpp src
+: 1781030898:0;c
+: 1781030899:0;cargo run -- examples/scanner/full.axo
+: 1781030974:0;c
+: 1781030975:0;cargo run -- examples/scanner/full.axo
+: 1781030981:0;cargo run -- examples/scanner/punctuation.axo
+: 1781030995:0;nvim src/parser/
+: 1781031019:0;c
+: 1781031024:0;cargo run -- examples/parser/full.axo
+: 1781031055:0;cd
+: 1781031057:0;c
+: 1781031058:0;ls
+: 1781031061:0;rm -rf td
+: 1781031061:0;c
+: 1781031063:0;cd lab
+: 1781031066:0;rm -rf telegram-cli
+: 1781031066:0;c
+: 1781031069:0;cd
+: 1781031069:0;c
+: 1781031071:0;ll
+: 1781031079:0;rm -rf .antigravity-ide
+: 1781031079:0;c
+: 1781031116:0;cargo run -- examples/parser/full.axo
+: 1781031119:0;cd axo
+: 1781031119:0;c
+: 1781031120:0;cargo run -- examples/parser/full.axo
+: 1781031130:0;c
+: 1781031134:0;cargo run -- examples/scanner/full.axo
+: 1781031170:0;c
+: 1781031174:0;catpp src
+: 1781031274:0;c
+: 1781031276:0;catpp src
+: 1781031283:0;catpp src -c "cargo run"
+: 1781031341:0;c
+: 1781031341:0;catpp src -c "cargo run"
+: 1781031366:0;c
+: 1781031367:0;catpp src -c "cargo run"
+: 1781031368:0;c
+: 1781031369:0;cargo run -- examples/scanner/full.axo
+: 1781031373:0;c
+: 1781031374:0;catpp src -c "cargo run"
+: 1781031456:0;c
+: 1781031457:0;cargo run -- examples/scanner/full.axo
+: 1781031463:0;cargo run -- examples/parser/full.axo
+: 1781031466:0;c
+: 1781031467:0;cargo run -- examples/parser/full.axo
+: 1781031474:0;rustup run nightly rustfmt src/main.rs
+: 1781031475:0;c
+: 1781031477:0;cargo run -- examples/parser/full.axo
+: 1781031505:0;c
+: 1781031505:0;ca
+: 1781031506:0;c
+: 1781031506:0;cargo run -- examples/parser/full.axor
+: 1781031508:0;c
+: 1781031512:0;cargo run -- examples/parser/full.axo
+: 1781031548:0;c
+: 1781031549:0;cargo run -- examples/parser/full.axo
+: 1781031574:0;c
+: 1781031574:0;cargo run -- examples/parser/full.axo
+: 1781031621:0;c
+: 1781031621:0;echo "x = 5 + 3" | cargo run
+: 1781031661:0;c
+: 1781031661:0;echo "a = -5" | cargo run\
+echo "b = true" | cargo run \
+echo "c = ~a" | cargo run
+: 1781031677:0;c
+: 1781031677:0;echo "x += 5" | cargo run\
+echo "x ^= 5" | cargo run\
+echo "x ~= 5" | cargo run\
+echo "x = ~5" | cargo run\
+echo "x ** y" | cargo run\
+echo "x..y" | cargo run
+: 1781031681:0;c
+: 1781031682:0;echo "x += 5" | cargo run\
+echo "x ^= 5" | cargo run\
+echo "x ~= 5" | cargo run\
+echo "x = ~5" | cargo run\
+echo "x ** y" | cargo run\
+echo "x..y" | cargo run
+: 1781031696:0;c
+: 1781031697:0;echo "~=" | cargo run
+: 1781031710:0;c
+: 1781031710:0;echo "~ =" | cargo run\
+echo "~" | cargo run
+: 1781031738:0;c
+: 1781031738:0;echo "~5" | cargo run
+: 1781031759:0;c
+: 1781031759:0;echo "x ~= 5" | cargo run
+: 1781031764:0;c
+: 1781031764:0;echo "~=" | cargo run
+: 1781031776:0;c
+: 1781031777:0;echo "x += 5" | cargo run\
+echo "x ^= 5" | cargo run
+: 1781031789:0;c
+: 1781031789:0;echo "x ~= 5" | cargo run
+: 1781031800:0;c
+: 1781031801:0;head -c 580 examples/parser/full.axo | tail -c 20
+: 1781031852:0;c
+: 1781031852:0;cargo run -- examples/parser/full.axo
+: 1781031855:0;c
+: 1781031856:0;echo "x ~= 5" | cargo run
+: 1781031868:0;c
+: 1781031868:0;echo "x ..= y" | cargo run\
+echo "x .. y" | cargo run\
+echo "x ... y" | cargo run\
+echo "x ||= y" | cargo run\
+echo "x &&= y" | cargo run
+: 1781031876:0;c
+: 1781031876:0;cargo run -- examples/parser/full.axo
+: 1781031886:0;c
+: 1781031886:0;head -c 580 examples/parser/full.axo | tail -c 20 | xxd
+: 1781031908:0;c
+: 1781031908:0;echo "{ x = 5; y = 10 }" | cargo run\
+echo "{\
+    x = 5\
+    y = 10\
+}" | cargo run\
+```Now I can see the exact content! Position 570-571 is the newline after `{` in the block. The parser is failing on blocks with multiple expressions. Let me test if blocks work at all:\
+\
+```bash\
+echo "{ x = 5 }" | cargo run\
+echo "{ x = 5; y = 10 }" | cargo run\
+echo "{\
+    x = 5\
+    y = 10\
+}" | cargo run
+: 1781032637:0;c
+: 1781032721:0;rs-pug
+: 1781032857:0;c
+: 1781032864:0;rs-pug
+: 1781033292:0;c
+: 1781033294:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781033295:0;c
+: 1781033349:0;cd Projects
+: 1781033349:0;c
+: 1781033351:0;nvim
+: 1781033423:0;c
+: 1781033424:0;ls
+: 1781033431:0;cd termgram
+: 1781033431:0;c
+: 1781033432:0;ls
+: 1781033432:0;c
+: 1781033434:0;nvim .
+: 1781033604:0;c
+: 1781033606:0;cargo run
+: 1781033669:0;c
+: 1781033671:0;nvim Cargo.toml
+: 1781033676:0;c
+: 1781033676:0;cargo run
+: 1781033715:0;cc
+: 1781033716:0;c
+: 1781033717:0;nvim Cargo.toml
+: 1781033720:0;c
+: 1781033721:0;cargo run
+: 1781033757:0;c
+: 1781033758:0;nvim Cargo.toml
+: 1781033763:0;c
+: 1781033764:0;cargo run
+: 1781033786:0;c
+: 1781033787:0;nvim Cargo.toml
+: 1781033790:0;c
+: 1781033790:0;cargo run
+: 1781033811:0;c
+: 1781033811:0;cargo run
+: 1781033828:0;c
+: 1781033829:0;cargo run
+: 1781033939:0;c
+: 1781033940:0;nvim Cargo.toml
+: 1781033943:0;c
+: 1781033943:0;cargo run
+: 1781034021:0;c
+: 1781034098:0;nvim Cargo.toml
+: 1781034101:0;c
+: 1781034104:0;nvim Cargo.toml
+: 1781034106:0;c
+: 1781034107:0;cargo run
+: 1781034113:0;c
+: 1781034113:0;cargo update -p glass_pumpkin --precise 1.9.0\
+cargo update -p core2 --precise 0.4.0
+: 1781034129:0;ls
+: 1781034130:0;c
+: 1781034132:0;cargo update -p glass_pumpkin --precise 1.9.0\
+cargo update -p core2 --precise 0.4.0
+: 1781034165:0;c
+: 1781034166:0;cargo generate-lockfile --offline 2>/dev/null; true
+: 1781034172:0;c
+: 1781034173:0;nvim Cargo.toml
+: 1781034176:0;c
+: 1781034180:0;mkdir -p vendor\
+cargo vendor vendor 2>/dev/null || true
+: 1781034213:0;c
+: 1781034221:0;nvim Cargo.toml
+: 1781034227:0;c
+: 1781034227:0;sed -i 's/glass_pumpkin.*/num-bigint = { version = "0.4", features = ["rand"] }/' /tmp/grammers/lib/grammers-crypto/Cargo.toml
+: 1781034237:0;grep -r "glass_pumpkin\|prime" /tmp/grammers/lib/grammers-crypto/src/
+: 1781034249:0;c
+: 1781034249:0;git clone https://github.com/Lonami/grammers /tmp/grammers
+: 1781034267:0;c
+: 1781034267:0;grep -rn "glass_pumpkin\|prime" /tmp/grammers/lib/grammers-crypto/src/
+: 1781034276:0;c
+: 1781034276:0;find /tmp/grammers -type f -name "*.rs" | head -20
+: 1781034291:0;c
+: 1781034292:0;grep -rn "glass_pumpkin\|prime" /tmp/grammers/grammers-crypto/src/
+: 1781034330:0;c
+: 1781034330:0;cat /tmp/grammers/grammers-crypto/src/two_factor_auth.rs
+: 1781034377:0;c
+: 1781034378:0;cat /tmp/grammers/grammers-crypto/Cargo.toml
+: 1781034443:0;c
+: 1781034444:0;nvim Cargo.toml
+: 1781034447:0;c
+: 1781034449:0;cargo generate-lockfile --offline 2>/dev/null; true
+: 1781034450:0;c
+: 1781034452:0;cargo run
+: 1781034506:0;c
+: 1781034506:0;cargo run
+: 1781034529:0;c
+: 1781034530:0;cat ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/lib.rs | head -60\
+cat ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/auth.rs | head -80
+: 1781034547:0;c
+: 1781034547:0;grep "pub async fn\|pub fn" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/auth.rs\
+grep "pub async fn\|pub fn" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/net.rs\
+grep "pub async fn\|pub fn" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/chats.rs 2>/dev/null | head -20\
+grep "pub async fn\|pub fn" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/messages.rs | head -20\
+grep "pub\|Dialog\|Peer\|iter_dialogs\|resolve" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/peer.rs 2>/dev/null | head -30
+: 1781034567:0;c
+: 1781034567:0;grep -rn "iter_dialog\|Dialog\|fn name" ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/ | grep "pub\|Dialog" | head -30\
+\
+grep -rn "pub async fn\|pub fn" ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/client/dialogs.rs 2>/dev/null | head -20\
+\
+grep -rn "pub struct\|pub enum\|impl " ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/peer/ 2>/dev/null | grep -v "//\|test" | head -30\
+\
+cat ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/client/net.rs | grep -A 20 "pub fn connect\|pub async fn connect\|ClientBuilder\|fn build\|SenderPool\|pub fn new"
+: 1781034597:0;c
+: 1781034597:0;find ~/.cargo/git/checkouts/grammers-2861ac880138ee45 -name "*.rs" -path "*/grammers-session/*" | xargs grep -n "pub fn\|pub struct" 2>/dev/null | head -30\
+grep -rn "pub fn\|pub struct" ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/peer/dialog.rs\
+grep -rn "pub fn\|pub struct\|impl Peer" ~/.cargo/git/checkouts/grammers-2861ac880138ee45/fa7692e/grammers-client/src/peer/mod.rs | head -20
+: 1781034612:0;c
+: 1781034614:0;nvim src/session.rs
+: 1781034617:0;c
+: 1781034625:0;nvim src/auth.rs
+: 1781034628:0;c
+: 1781034634:0;nvim src/client.rs
+: 1781034637:0;c
+: 1781034643:0;nvim src/tui/mod.rs
+: 1781034646:0;c
+: 1781034650:0;nvim src/tui/view.rs
+: 1781034653:0;c
+: 1781034656:0;cat ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/lib.rs | head -60\
+cat ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/client/auth.rs | head -80
+: 1781034656:0;c
+: 1781034658:0;cargo run
+: 1781034676:0;c
+: 1781034676:0;grep -rn "pub use\|pub fn\|pub struct\|pub async fn" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-session/src/lib.rs\
+\
+grep -rn "pub use\|pub fn\|pub struct" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-client/src/lib.rs | head -40\
+\
+grep -n "pub fn\|pub struct\|pub async fn" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-session/src/storages/sqlite.rs 2>/dev/null\
+\
+grep -n "pub fn\|pub struct\|pub async fn" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-session/src/storages/memory.rs 2>/dev/null\
+\
+grep -rn "pub use\|pub fn\|pub struct" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-mtsender/src/lib.rs 2>/dev/null | head -20\
+\
+grep -n "resolve_username\|fn send_message" ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-client/src/client/chats.rs ~/.cargo/git/checkouts/grammers-8937e3b5288aa015/1e448a3/grammers-client/src/client/messages.rs
+: 1781034718:0;c
+: 1781034721:0;curl -fsSL https://antigravity.google/cli/install.sh | bash
+: 1781034742:0;\
+dig antigravity.google +short\
+\
+#\
+#\
+ping antigravity.google\
+\
+#\
+curl -I https://antigravity.google.com/cli/install.sh
+: 1781034747:0;c
+: 1781034752:0;find ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src -name "*.rs" | xargs grep -ln "Into<PeerRef>\|From.*Peer.*PeerRef" 2>/dev/null | head -5\
+\
+grep -rn "impl From\|Into<PeerRef>" ~/.cargo/git/checkouts/grammers-*/*/grammers-session/src/peer.rs 2>/dev/null | head -20\
+\
+grep -n "pub fn peer_ref\|pub fn peer\b\|fn name" ~/.cargo/git/checkouts/grammers-*/*/grammers-client/src/peer/dialog.rs 2>/dev/null
+: 1781034777:0;c
+: 1781034781:0;nvim Cargo.toml
+: 1781034783:0;c
+: 1781034788:0;nvim src/session.rs
+: 1781034791:0;c
+: 1781034792:0;cargo run
+: 1781034793:0;c
+: 1781034799:0;nvim src/auth.rs
+: 1781034802:0;c
+: 1781034813:0;nvim src/tui/mod.rs
+: 1781034816:0;c
+: 1781034816:0;cargo run
+: 1781034872:0;c
+: 1781034898:0;sudo pacman -S cmake gperf openssl zlib ninja\
+git clone https://github.com/tdlib/td /tmp/td\
+cd /tmp/td\
+mkdir build && cd build\
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local ..\
+cmake --build . --target install -j$(nproc)
+: 1781035527:0;c
+: 1781035531:0;cd termgram
+: 1781035531:0;c
+: 1781035534:0;nvim .
+: 1781035644:0;c
+: 1781035705:0;nvim src/config.rs
+: 1781035729:0;c
+: 1781035730:0;cargo run
+: 1781035857:0;c
+: 1781035858:0;cargo run
+: 1781035904:0;c
+: 1781035904:0;find ~/.cargo/registry/src -path "*rust-tdlib*" -name "mod.rs" | grep client\
+cat ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-tdlib-0.4.3/src/client/mod.rs | grep -A5 "pub fn\|pub async fn\|pub struct\|impl Client\|fn bind\|fn start\|auth_client\|Worker" | head -80\
+cat ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-tdlib-0.4.3/examples/*.rs 2>/dev/null | head -80
+: 1781035913:0;c
+: 1781035924:0;catpp src -c "cargo run"
+: 1781036055:0;c
+: 1781036059:0;nvim src/tg.rs
+: 1781036142:0;c
+: 1781036142:0;catpp src -c "cargo run"
+: 1781036143:0;c
+: 1781036144:0;cargo run
+: 1781036154:0;c
+: 1781036160:0;nvim src/tui/mod.rs
+: 1781036173:0;c
+: 1781036174:0;cargo run
+: 1781036180:0;nvim src/auth.rs
+: 1781036186:0;c
+: 1781036187:0;cargo run
+: 1781036198:0;c
+: 1781036201:0;nvim src/auth.rs
+: 1781036207:0;c
+: 1781036207:0;cargo run
+: 1781036251:0;c
+: 1781036251:0;sudo cmake --build /tmp/td/build --target install -j$(nproc)
+: 1781036264:0;c
+: 1781036264:0;echo '/usr/local/lib' | sudo tee /etc/ld.so.conf.d/tdlib.conf\
+sudo ldconfig
+: 1781036267:0;c
+: 1781036269:0;cargo run
+: 1781036276:0;nvim .
+: 1781036288:0;c
+: 1781036289:0;cargo run
+: 1781036387:0;c
+: 1781036391:0;nvim src/config.rs
+: 1781036397:0;c
+: 1781036397:0;grep -r "with_tdlib_parameters\|TdlibParameters\|ClientBuilder" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -30
+: 1781036428:0;c
+: 1781036428:0;grep -r "fn build\|api_id\|api_hash\|database_directory" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/types/tdlib_parameters.rs | head -40
+: 1781036446:0;c
+: 1781036448:0;grep "params"
+: 1781036450:0;c
+: 1781036453:0;grep "params" **/**
+: 1781036455:0;c
+: 1781036458:0;grep "params" src/**
+: 1781036461:0;nvim src/auth.rs
+: 1781036468:0;c
+: 1781036469:0;cargo run
+: 1781036494:0;c
+: 1781036495:0;grep -A5 "fn with_tdlib_parameters\|tdlib_parameters.*=" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -40
+: 1781036508:0;c
+: 1781036508:0;grep -n -A 20 "fn build" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -60
+: 1781036511:0;grep -n -A 10 "fn bind_client\|setTdlibParameters\|tdlib_parameters" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -80
+: 1781036517:0;c
+: 1781036523:0;grep -n -A 30 "fn bind_client\|fn start\b" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -100
+: 1781036525:0;grep -n -A 15 "struct Worker\|impl Worker\|fn handle_auth\|WaitTdlibParameters\|setTdlibParameters" ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src/client/mod.rs | head -100
+: 1781036534:0;c
+: 1781036534:0;find ~/.cargo/registry/src/*/rust-tdlib-0.4.3/src -name "*.rs" | xargs grep -l "Worker\|bind_client\|auth_client"
+: 1781036543:0;c
+: 1781036543:0;cat ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-tdlib-0.4.3/src/client/worker.rs
+: 1781036551:0;c
+: 1781036555:0;catpp ~/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rust-tdlib-0.4.3/src/client/worker.rs
+: 1781036575:0;c
+: 1781036577:0;nvim src/auth.rs
+: 1781036607:0;c
+: 1781036609:0;cargo run
+: 1781036636:0;c
+: 1781036640:0;cd ..
+: 1781036644:0;c
+: 1781036649:0;shutdown now
+: 1781099193:0;sudo hiddify
+: 1781099203:0;c
+: 1781099214:0;cd pro
+: 1781099214:0;c
+: 1781099217:0;ls
+: 1781099223:0;c
+: 1781099227:0;rm -rf termgram
+: 1781099227:0;c
+: 1781099228:0;ls
+: 1781099229:0;c
+: 1781099231:0;cd ..
+: 1781099231:0;c
+: 1781099232:0;ls
+: 1781099234:0;c
+: 1781099245:0;catpp .config/nvim/
+: 1781099260:0;c
+: 1781099266:0;nvim .config/nvim/lua/colors.lua
+: 1781099307:0;c
+: 1781099311:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781099311:0;c
+: 1781099347:0;cd .config/nvim/
+: 1781099348:0;c
+: 1781099350:0;nvim .
+: 1781099398:0;c
+: 1781099404:0;ls
+: 1781099405:0;c
+: 1781099474:0;nvim .config/nvim/lua/colors.lua
+: 1781099488:0;c
+: 1781099496:0;sudo pacman -S marksman
+: 1781099512:0;c
+: 1781099516:0;sudo pacman -S prettier
+: 1781099521:0;c
+: 1781099525:0;sudo pacman -S serve-d
+: 1781099530:0;c
+: 1781099561:0;sudo pacman -S dlang-dmd
+: 1781099576:0;c
+: 1781099576:0;sudo pacman -S dub
+: 1781099580:0;c
+: 1781099580:0;dub fetch serve-d\
+dub build serve-d
+: 1781099602:0;cd pro
+: 1781099602:0;c
+: 1781099604:0;nvim .
+: 1781099624:0;c
+: 1781099635:0;cd lab
+: 1781099636:0;c
+: 1781099639:0;cd dstart
+: 1781099639:0;c
+: 1781099640:0;nvim .
+: 1781099650:0;c
+: 1781099660:0;nvim lua/autocmds.lua
+: 1781099669:0;c
+: 1781099672:0;cd axo
+: 1781099673:0;c
+: 1781099675:0;nvim README.md
+: 1781099735:0;sudo pacman -S rdmd
+: 1781099740:0;c
+: 1781099743:0;dub fetch serve-d\
+dub build serve-d
+: 1781099800:0;c
+: 1781099806:0;serdi
+: 1781099813:0;man serdi
+: 1781099814:0;c
+: 1781099817:0;sudo pacman -S man
+: 1781099826:0;c
+: 1781099828:0;man serdi
+: 1781099832:0;c
+: 1781099841:0;ls
+: 1781099844:0;nvim main.d
+: 1781099934:0;c
+: 1781099943:0;nvim lua/autocmds.lua
+: 1781099953:0;c
+: 1781099955:0;nvim main.d
+: 1781099965:0;c
+: 1781099969:0;which serve-d || which served
+: 1781099970:0;c
+: 1781100008:0;catpp .
+: 1781100011:0;ls
+: 1781100014:0;c
+: 1781100021:0;prettier
+: 1781100029:0;c
+: 1781100031:0;prettier
+: 1781100041:0;c
+: 1781100082:0;grep "ensure_install" .
+: 1781100087:0;grep "ensure_install" **/**
+: 1781100090:0;nvim lua/plugins.lua
+: 1781100130:0;c
+: 1781100133:0;which serve-d
+: 1781100138:0;dub fetch serve-d\
+dub run serve-d -- --version
+: 1781100162:0;c
+: 1781100163:0;ln -s ~/.dub/packages/serve-d/0.7.6/serve-d/serve-d ~/.local/bin/serve-d
+: 1781100165:0;which serve-d
+: 1781100166:0;c
+: 1781100174:0;nvim main.d
+: 1781100263:0;nvim lua/plugins.lua
+: 1781100286:0;c
+: 1781100290:0;nvim main.d
+: 1781100304:0;c
+: 1781100329:0;rm -rf main.d
+: 1781100329:0;c
+: 1781100341:0;dmb --help
+: 1781100345:0;dmd --help
+: 1781100370:0;d
+: 1781100372:0;dub
+: 1781100391:0;dub init --help
+: 1781100393:0;c
+: 1781100394:0;dub init --help
+: 1781100404:0;cd ..
+: 1781100405:0;c
+: 1781100409:0;dub init dstart
+: 1781100436:0;c
+: 1781100437:0;ls
+: 1781100439:0;cd dstart
+: 1781100439:0;c
+: 1781100440:0;ls
+: 1781100444:0;nvim .
+: 1781100483:0;c
+: 1781100486:0;nvim source/app.d
+: 1781102061:0;c
+: 1781102062:0;nvim .
+: 1781102262:0;c
+: 1781102264:0;nvim source/app.d
+: 1781102748:0;c
+: 1781102850:0;nvim README.md
+: 1781102894:0;c
+: 1781102900:0;nvim .
+: 1781102970:0;c
+: 1781102972:0;nvim source/app.d
+: 1781103181:0;c
+: 1781103186:0;nvim source/temp.d
+: 1781103191:0;c
+: 1781103198:0;nvim source/temp.d
+: 1781105812:0;c
+: 1781105817:0;cargo run -- examples/parser/full.axor
+: 1781105822:0;cargo run -- examples/parser/full.axo
+: 1781105828:0;cargo run -- examples/scanner/full.axo
+: 1781105944:0;c
+: 1781105947:0;nvim .
+: 1781105974:0;c
+: 1781105980:0;grep "print" .
+: 1781105983:0;grep "print" **/**
+: 1781105987:0;grep "print" src/**
+: 1781105990:0;grep "print" src/**/**
+: 1781105991:0;c
+: 1781105993:0;grep "print" src/**/**
+: 1781106013:0;grep "print" src/**
+: 1781106016:0;grep "print" src/**/**
+: 1781106021:0;grep "print" src/**/**/**
+: 1781106026:0;tree
+: 1781106026:0;c
+: 1781106028:0;tree src
+: 1781106048:0;grep src/**
+: 1781106056:0;c
+: 1781106058:0;grep src/**/**
+: 1781106060:0;grep src/**/**.rs
+: 1781106064:0;grep src/*/**.rs
+: 1781106066:0;grep src/*/*.rs
+: 1781106068:0;grep src/*
+: 1781106072:0;grep src/*/*.rs
+: 1781106074:0;grep src/*/*
+: 1781106081:0;grep "print" src/*/*.rs
+: 1781106085:0;grep "print" src/*.rs
+: 1781106089:0;grep "print" src/*/*.rs
+: 1781106090:0;grep "print" src/*/**.rs
+: 1781106092:0;grep "print" src/**/**.rs
+: 1781106142:0;c
+: 1781106143:0;cargo run -- examples/scanner/full.axo
+: 1781106161:0;c
+: 1781106164:0;catpp src
+: 1781106175:0;catpp src/main.rs
+: 1781106181:0;catpp src/main.rs src/scanner/
+: 1781110874:0;c
+: 1781110876:0;catpp src
+: 1781110886:0;c
+: 1781110889:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781110890:0;c
+: 1781110967:0;catpp src
+: 1781110971:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781110972:0;c
+: 1781111273:0;cargo run -- examples/scanner/full.axo
+: 1781111282:0;catpp src -c "cargo run"
+: 1781111283:0;c
+: 1781111305:0;cargo run -- examples/scanner/full.axo
+: 1781111323:0;c
+: 1781111324:0;cargo run -- examples/scanner/full.axo
+: 1781111345:0;c
+: 1781111347:0;catpp src -c "cargo run"
+: 1781111354:0;systemctl suspend
+: 1781115972:0;c
+: 1781115974:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781115975:0;c
+: 1781116014:0;catpp src -c "cargo run"
+: 1781116017:0;c
+: 1781117565:0;git reset --hard
+: 1781117567:0;c
+: 1781117911:0;catpp src -c "cargo run"
+: 1781117993:0;c
+: 1781117994:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781117995:0;c
+: 1781118068:0;catpp src -c "cargo run"
+: 1781118119:0;c
+: 1781118121:0;cargo run -- examples/scanner/full.axo
+: 1781118153:0;c
+: 1781118153:0;cargo run -- examples/scanner/full.axo
+: 1781118161:0;c
+: 1781118165:0;cargo run -- examples/scanner/punctuation.axo
+: 1781118205:0;c
+: 1781118205:0;cargo run -- examples/scanner/punctuation.axo
+: 1781118210:0;c
+: 1781118231:0;timeout 20
+: 1781118235:0;timeout 20 true
+: 1781118258:0;catpp src -c "timeout 5 cargo run -- examples/scanner/punctuation.axo"
+: 1781118305:0;c
+: 1781118306:0;cargo run -- examples/scanner/punctuation.axo
+: 1781118314:0;c
+: 1781118337:0;catpp src examples/scanner/punctuation.axo -c "timeout 5 cargo run -- examples/scanner/punctuation.axo"
+: 1781118344:0;c
+: 1781118721:0;curl -fsSL https://freellmapi.co/install.sh | bash
+: 1781118728:0;sudo pacman -S docker
+: 1781118772:0;c
+: 1781118773:0;curl -fsSL https://freellmapi.co/install.sh | bash
+: 1781118782:0;docker compose
+: 1781118790:0;sudo pacman -S docker-compose
+: 1781118803:0;c
+: 1781118805:0;curl -fsSL https://freellmapi.co/install.sh | bash
+: 1781118816:0;sudo systemctl start docker
+: 1781118818:0;c
+: 1781118819:0;curl -fsSL https://freellmapi.co/install.sh | bash
+: 1781118826:0;sudo systemctl start docker
+: 1781118828:0;curl -fsSL https://freellmapi.co/install.sh | bash
+: 1781118854:0;c
+: 1781118854:0;curl -fsSL https://freellmapi.co/install.sh | sudo bash
+: 1781120851:0;systemctl suspend
+: 1781248531:0;c
+: 1781248541:0;sudo pacman -S clojure
+: 1781248626:0;nvim .config/nvim/
+: 1781248651:0;c
+: 1781248660:0;cd lab
+: 1781248660:0;c
+: 1781248663:0;nvim .
+: 1781248672:0;c
+: 1781248675:0;cd ..
+: 1781248675:0;c
+: 1781248677:0;nvim .config/nvim/
+: 1781248689:0;nvim .config/nvim/lua/plugins.lua
+: 1781248713:0;c
+: 1781248723:0;cd lab
+: 1781248723:0;c
+: 1781248724:0;nvim ./
+: 1781248990:0;clojure
+: 1781249063:0;c
+: 1781249216:0;cd nvim
+: 1781249217:0;pwd
+: 1781249218:0;c
+: 1781249222:0;nvim lua/keymaps.lua
+: 1781249255:0;c
+: 1781249276:0;cd cljj
+: 1781249276:0;c
+: 1781249277:0;nvim test.clj
+: 1781249309:0;c
+: 1781249315:0;nvim test.clj
+: 1781249387:0;c
+: 1781249396:0;cd axo
+: 1781249400:0;nvim src/main.rs
+: 1781249413:0;nvim lua/plugins.lua
+: 1781249436:0;c
+: 1781249438:0;nvim src/main.rs
+: 1781250344:0;c
+: 1781250361:0;catpp src/scanner src/main.rs
+: 1781250372:0;catpp src/scanner src/main.rs src/chain
+: 1781250872:0;c
+: 1781250874:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781250874:0;c
+: 1781252227:0;nvim test.clj
+: 1781252286:0;nvim lua/plugins.lua
+: 1781252296:0;c
+: 1781252299:0;nvim lua/keymaps.lua
+: 1781252313:0;c
+: 1781252413:0;catpp src/scanner src/main.rs src/chain
+: 1781252782:0;c
+: 1781252783:0;cargo run -- examples/scanner/punctuation.axo
+: 1781252786:0;git reset --hard
+: 1781252787:0;c
+: 1781252788:0;cargo run -- examples/scanner/punctuation.axo
+: 1781252792:0;c
+: 1781252795:0;cargo run -- examples/scanner/punctuation.axo
+: 1781252797:0;c
+: 1781252804:0;/bin/time -v cargo run -- examples/scanner/punctuation.axo
+: 1781252806:0;c
+: 1781252810:0;catpp src/scanner src/main.rs src/chain
+: 1781252966:0;c
+: 1781252967:0;catpp src/scanner src/main.rs src/chain
+: 1781252973:0;c
+: 1781252974:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253035:0;c
+: 1781253036:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253070:0;ca
+: 1781253070:0;c
+: 1781253071:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253090:0;c
+: 1781253091:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253095:0;c
+: 1781253099:0;timeout 5 cargo run -- examples/scanner/punctuation.axo
+: 1781253129:0;c
+: 1781253129:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253152:0;c
+: 1781253153:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253156:0;c
+: 1781253158:0;timeout 5 cargo run -- examples/scanner/punctuation.axo
+: 1781253240:0;c
+: 1781253240:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253241:0;c
+: 1781253243:0;git reset --hard
+: 1781253243:0;c
+: 1781253244:0;cargo run -- examples/scanner/punctuation.axo
+: 1781253245:0;c
+: 1781254840:0;catpp src/scanner src/main.rs src/chain
+: 1781254844:0;catpp src
+: 1781254845:0;c
+: 1781254878:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781254878:0;c
+: 1781254918:0;catpp src
+: 1781254958:0;c
+: 1781254970:0;cd axo
+: 1781254972:0;c
+: 1781254990:0;nvim temp
+: 1781255367:0;c
+: 1781255368:0;cargo run -- examples/scanner/punctuation.axo
+: 1781255537:0;cargo run -- examples/scanner/punctuation.axo || cat src/scanner/punctuation.rs
+: 1781255542:0;c
+: 1781255548:0;cargo run -- examples/scanner/punctuation.axo && cat src/scanner/punctuation.rs
+: 1781255558:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781255559:0;c
+: 1781255559:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781255757:0;c
+: 1781255758:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781255767:0;c
+: 1781255768:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781255874:0;c
+: 1781255875:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781255881:0;/bin/time -v cargo run -- examples/scanner/punctuation.axo
+: 1781255899:0;c
+: 1781255922:0;/bin/time -v cargo run --release -- examples/scanner/punctuation.axo
+: 1781255954:0;/bin/time -v ./target/release/axo examples/scanner/punctuation.axo \ 
+: 1781255958:0;/bin/time -v ./target/release/axo examples/scanner/punctuation.axo
+: 1781255961:0;c
+: 1781255962:0;/bin/time -v ./target/release/axo examples/scanner/punctuation.axo
+: 1781256058:0;c
+: 1781256069:0;/bin/time -v ./target/release/axo examples/scanner/full.axo
+: 1781256086:0;c
+: 1781256094:0;man catman
+: 1781256103:0;catpp src
+: 1781256387:0;c
+: 1781256389:0;cargo run -- examples/scanner/punctuation.axo && cat examples/scanner/punctuation.axo
+: 1781256395:0;c
+: 1781256415:0;catpp examples/scanner/punctuation.axo -c "cargo run --release -- examples/scanner/punctuation.axo"
+: 1781256459:0;catpp examples/scanner/punctuation.axo -c "cargo run --release -- examples/scanner/full.axo "
+: 1781256468:0;catpp examples/scanner/full.axo -c "cargo run --release -- examples/scanner/full.axo"
+: 1781256477:0;cargo run -- examples/scanner/full.axo
+: 1781256491:0;c
+: 1781256493:0;catpp examples/scanner/full.axo -c "cargo run --release -- examples/scanner/full.axo"
+: 1781256536:0;/bin/time -v ./target/release/axo examples/scanner/full.axo
+: 1781256545:0;c
+: 1781256619:0;catpp src
+: 1781256711:0;c
+: 1781256713:0;cargo run -- examples/scanner/full.axo
+: 1781256787:0;c
+: 1781256788:0;catpp src
+: 1781256823:0;c
+: 1781256826:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781256826:0;c
+: 1781256930:0;cargo run -- examples/scanner/full.axo
+: 1781257165:0;nvim examples/scanner/punctuation.axo
+: 1781257169:0;c
+: 1781257174:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257200:0;nvim examples/scanner/punctuation.axo
+: 1781257202:0;c
+: 1781257204:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257252:0;nvim examples/scanner/punctuation.axo
+: 1781257256:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257257:0;c
+: 1781257474:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257494:0;catpp src examples/scanner/punctuation.axo -c "cargo run -- examples/scanner/punctuation.axo "
+: 1781257641:0;c
+: 1781257642:0;catpp src examples/scanner/punctuation.axo -c "cargo run -- examples/scanner/punctuation.axo "
+: 1781257643:0;c
+: 1781257644:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257788:0;c
+: 1781257789:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257803:0;catpp src
+: 1781257836:0;c
+: 1781257838:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781257839:0;c
+: 1781257852:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781257853:0;c
+: 1781257856:0;cargo run -- examples/scanner/punctuation.axo
+: 1781257876:0;nvim examples/scanner/punctuation.axo
+: 1781258152:0;c
+: 1781258153:0;cargo run -- examples/scanner/punctuation.axo
+: 1781258157:0;c
+: 1781258981:0;catpp src
+: 1781258997:0;c
+: 1781258999:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781258999:0;c
+: 1781260642:0;catpp src
+: 1781260794:0;c
+: 1781260798:0;nvim src/parser
+: 1781260876:0;c
+: 1781260877:0;cargo run -- examples/scanner/punctuation.axo
+: 1781260938:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781260956:0;c
+: 1781261007:0;cargo run -- examples/scanner/punctuation.axo
+: 1781261008:0;c
+: 1781261009:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781261014:0;c
+: 1781261027:0;echo "(+ 1 (* 2 3))" | cargo runc
+: 1781261028:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781261035:0;c
+: 1781261035:0;cargo run -- examples/scanner/punctuation.axo
+: 1781261043:0;c
+: 1781261047:0;git add src/parser/
+: 1781261048:0;c
+: 1781261054:0;git commit -a -m "fix"
+: 1781261056:0;git push
+: 1781261059:0;c
+: 1781261063:0;cargo run -- examples/scanner/punctuation.axo
+: 1781261066:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781261114:0;c
+: 1781261115:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781261139:0;echo "(+ 1" | cargo run
+: 1781261157:0;echo "(+ 1))" | cargo run
+: 1781261560:0;c
+: 1781261560:0;cargo run -- examples/scanner/punctuation.axo
+: 1781261562:0;c
+: 1781261564:0;echo "(+ 1))" | cargo run
+: 1781261569:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781261753:0;c
+: 1781261754:0;nvim src
+: 1781262166:0;c
+: 1781262170:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781262183:0;git add src/backend
+: 1781262195:0;c
+: 1781262195:0;cargo run -- examples/scanner/punctuation.axo
+: 1781262198:0;c
+: 1781262199:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781262218:0;c
+: 1781262246:0;echo "(+ 1 (* 2 3))" | cargo run
+: 1781262268:0;c
+: 1781262272:0;git commit -a -m "working"
+: 1781262272:0;c
+: 1781262273:0;git pusg
+: 1781262275:0;git push
+: 1781262302:0;echo "(if true)" | cargo run
+: 1781262305:0;c
+: 1781262311:0;echo "(define square (lambda (x) (* x x)))" | cargo run
+: 1781262325:0;echo "(define square (lambda (x) (* x x)))\n(square 2)" | cargo run
+: 1781262359:0;echo "(define square (lambda (x) (* x x)))\n(square 2)" | cargo runc
+: 1781262360:0;c
+: 1781262364:0;cargo run -- examples/pipeline/test.axo
+: 1781262389:0;echo "(define square (lambda (x) (* x x)))\n(square 2)" | cargo runc
+: 1781262391:0;c
+: 1781262392:0;echo "(define square (lambda (x) (* x x)))\n(square 2)" | cargo run
+: 1781262447:0;c
+: 1781262448:0;printf "(define square (lambda (x) (* x x)))\n(square 2)\n" | cargo run
+: 1781262492:0;c
+: 1781262560:0;cargo run -- examples/pipeline/test.axo
+: 1781262579:0;c
+: 1781262580:0;cargo run -- examples/pipeline/test.axo
+: 1781262625:0;c
+: 1781262627:0;git commit -a -m "working"
+: 1781262631:0;c
+: 1781262632:0;git push
+: 1781262635:0;c
+: 1781264379:0;cargo run -- examples/pipeline/test.axo
+: 1781264413:0;c
+: 1781264413:0;cargo run -- examples/pipeline/test.axo
+: 1781264450:0;c
+: 1781264450:0;cargo run -- examples/pipeline/test.axo
+: 1781264478:0;c
+: 1781264478:0;result: ()\
+result: (1 2 3)\
+result: 1\
+result: 2\
+result: true\
+result: true\
+result: true
+: 1781264479:0;c
+: 1781264480:0;cargo run -- examples/pipeline/test.axo
+: 1781264567:0;c
+: 1781264568:0;cargo run -- examples/pipeline/test.axo
+: 1781264580:0;c
+: 1781264581:0;cargo run -- examples/pipeline/test.axo
+: 1781264620:0;c
+: 1781264621:0;cargo run -- examples/pipeline/test.axo
+: 1781264632:0;c
+: 1781264632:0;cargo run -- examples/pipeline/test.axo
+: 1781264652:0;c
+: 1781264653:0;catpp src
+: 1781264703:0;c
+: 1781264704:0;git commit -a -m "working"
+: 1781264704:0;c
+: 1781264705:0;git push
+: 1781264707:0;c
+: 1781264972:0;catpp src
+: 1781265020:0;c
+: 1781265020:0;catpp src
+: 1781265021:0;c
+: 1781265025:0;cargo run
+: 1781265047:0;c
+: 1781265082:0;cargo run
+: 1781265515:0;c
+: 1781265521:0;catpp src
+: 1781265570:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781265571:0;c
+: 1781265638:0;catpp src Cargo.toml
+: 1781265769:0;c
+: 1781265769:0;catpp src Cargo.toml
+: 1781265771:0;c
+: 1781265772:0;cargo run
+: 1781265783:0;c
+: 1781271816:0;cargo run
+: 1781271826:0;c
+: 1781271833:0;catpp src Cargo.toml
+: 1781271914:0;c
+: 1781271915:0;curl -fsSL https://x.ai/cli/install.sh | bash
+: 1781271975:0;c
+: 1781271976:0;grok
+: 1781272042:0;c
+: 1781272438:0;git commit -a -m "working"
+: 1781272439:0;c
+: 1781272440:0;git push
+: 1781272443:0;c
+: 1781272444:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781272444:0;c
+: 1781272539:0;cargo run
+: 1781272543:0;c
+: 1781272577:0;cargo run -- examples/pipeline/test.axo
+: 1781272722:0;c
+: 1781272723:0;cargo run -- examples/pipeline/test.axo
+: 1781272724:0;c
+: 1781272725:0;cargo run -- examples/pipeline/test.axo
+: 1781272755:0;c
+: 1781272756:0;cargo run
+: 1781272787:0;c
+: 1781272940:0;git commit -a -m "working"
+: 1781272943:0;git push
+: 1781272946:0;c
+: 1781273442:0;catpp src Cargo.toml
+: 1781273530:0;c
+: 1781273533:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781273533:0;c
+: 1781273678:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781273678:0;c
+: 1781273690:0;cargo run
+: 1781273741:0;c
+: 1781273741:0;cargo run
+: 1781273765:0;c
+: 1781273765:0;echo '(define (add integer) (lambda ((x integer) (y integer)) (+ x y)))' > /tmp/test.axo
+: 1781273768:0;cargo run /tmp/test.axo
+: 1781273817:0;c
+: 1781273817:0;cargo run /tmp/test.axo
+: 1781273827:0;c
+: 1781273828:0;echo "(define add (lambda ((x integer) (y integer)) (+ x y)))" > /tmp/test.axo\
+cargo run /tmp/test.axo
+: 1781273846:0;c
+: 1781273847:0;echo "(define add (-> (integer integer) integer) (lambda ((x integer) (y integer)) (+ x y)))" > /tmp/test2.axo\
+cargo run /tmp/test2.axo
+: 1781273858:0;c
+: 1781273859:0;echo "(define (add (-> (integer integer) integer)) (lambda ((x integer) (y integer)) (+ x y)))" > /tmp/test2.axo\
+cargo run /tmp/test2.axo
+: 1781273868:0;c
+: 1781273870:0;echo "(define (add integer) (lambda ((x integer) (y integer)) (+ x y)))" > /tmp/test3.axo\
+cargo run /tmp/test3.axo
+: 1781274261:0;c
+: 1781274266:0;cargo run
+: 1781274411:0;c
+: 1781274412:0;cargo run
+: 1781274451:0;c
+: 1781274542:0;catpp src Cargo.toml
+: 1781274572:0;cat /home/alee/Obsidian/Coding\ Rules.md | xclip -selection clipboard
+: 1781274573:0;c
+: 1781274666:0;catpp src Cargo.toml
+: 1781274723:0;c
+: 1781274725:0;cargo run
+: 1781274959:0;c
+: 1781274960:0;cd axo
+: 1781274961:0;nvim .
+: 1781274987:0;c
+: 1781274992:0;cargo run
+: 1781275010:0;c
+: 1781275014:0;catpp src Cargo.toml
+: 1781275041:0;c
+: 1781275043:0;nvim .
+: 1781275058:0;c
+: 1781275060:0;cargo run
+: 1781275106:0;c
+: 1781275210:0;systemctl suspend
+: 1781290687:0;c
+: 1781290689:0;git commit -a -m "working"
+: 1781290689:0;c
+: 1781290690:0;git push
+: 1781290693:0;c
+: 1781290696:0;git push
+: 1781290698:0;c
+: 1781290700:0;cd
+: 1781290700:0;c
+: 1781290705:0;cd dots
+: 1781290706:0;c
+: 1781290706:0;pwd
+: 1781290707:0;c
+: 1781290716:0;cp -r ~/.config/nvim/ nvim/
+: 1781290723:0;rm -rf *
+: 1781290724:0;c
+: 1781290725:0;cp -r ~/.config/nvim/ nvim/
+: 1781290731:0;cp -r ~/.config/zsh zsh

@@ -5,13 +5,13 @@ end
 
 vim.diagnostic.config({
     virtual_text = {
-        prefix = "",
+        prefix  = "",
         spacing = 4,
     },
-    signs = true,
-    underline = true,
+    signs            = true,
+    underline        = true,
     update_in_insert = false,
-    severity_sort = true,
+    severity_sort    = true,
     float = {
         border = "single",
         source = "always",
@@ -24,39 +24,34 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 
-local lsp_attach = function(client, bufnr)
+local lsp_attach = function(_, bufnr)
     local opts = { buffer = bufnr }
-
-    vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-    vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
-    vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
-    vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
-    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-    vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
-    vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
-    vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
-    vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
-    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    vim.keymap.set("n", "gd",         vim.lsp.buf.definition,    opts)
+    vim.keymap.set("n", "gD",         vim.lsp.buf.declaration,   opts)
+    vim.keymap.set("n", "gi",         vim.lsp.buf.implementation,opts)
+    vim.keymap.set("n", "gr",         vim.lsp.buf.references,    opts)
+    vim.keymap.set("n", "K",          vim.lsp.buf.hover,         opts)
+    vim.keymap.set("n", "<C-k>",      vim.lsp.buf.signature_help,opts)
+    vim.keymap.set("n", "gl",         vim.diagnostic.open_float, opts)
+    vim.keymap.set("n", "[d",         vim.diagnostic.goto_prev,  opts)
+    vim.keymap.set("n", "]d",         vim.diagnostic.goto_next,  opts)
+    vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename,        opts)
     vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
     vim.keymap.set("n", "<leader>f", function()
         vim.lsp.buf.format({ async = true })
     end, opts)
 end
 
-local capabilities = vim.lsp.protocol.make_client_capabilities()
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 
 local function setup(name, config)
-    local cmd = config.cmd or { name }
+    local cmd        = config.cmd or { name }
     local executable = type(cmd) == "table" and cmd[1] or cmd
-
-    if vim.fn.executable(executable) ~= 1 then
-        return
-    end
-
+    if vim.fn.executable(executable) ~= 1 then return end
     pcall(function()
         vim.lsp.config(name, vim.tbl_extend("keep", config, {
-            on_attach = lsp_attach,
+            on_attach    = lsp_attach,
             capabilities = capabilities,
         }))
         vim.lsp.enable(name)
@@ -73,19 +68,17 @@ setup("clangd", {
         "--function-arg-placeholders=true",
         "--log=error",
     },
-    filetypes = { "c", "cpp", "objc", "objcpp", "cuda" },
+    filetypes    = { "c", "cpp", "objc", "objcpp", "cuda" },
     root_markers = { ".clangd", "compile_commands.json", "compile_flags.txt", ".git" },
-    init_options = {
-        fallbackFlags = { "-std=c17" },
-    },
+    init_options = { fallbackFlags = { "-std=c17" } },
 })
 
 setup("rust_analyzer", {
-    cmd = { "rust-analyzer" },
+    cmd       = { "rust-analyzer" },
     filetypes = { "rust" },
-    settings = {
+    settings  = {
         ["rust-analyzer"] = {
-            cargo = { allFeatures = true },
+            cargo       = { allFeatures = true },
             checkOnSave = false,
             diagnostics = { enable = true },
         },
@@ -94,15 +87,15 @@ setup("rust_analyzer", {
 })
 
 setup("pyright", {
-    cmd = { "pyright-langserver", "--stdio" },
+    cmd       = { "pyright-langserver", "--stdio" },
     filetypes = { "python" },
-    settings = {
+    settings  = {
         python = {
             analysis = {
-                autoSearchPaths = true,
-                diagnosticMode = "workspace",
+                autoSearchPaths      = true,
+                diagnosticMode       = "workspace",
                 useLibraryCodeForTypes = true,
-                typeCheckingMode = "basic",
+                typeCheckingMode     = "basic",
             },
         },
     },
@@ -110,14 +103,14 @@ setup("pyright", {
 })
 
 setup("lua_ls", {
-    cmd = { "lua-language-server" },
+    cmd       = { "lua-language-server" },
     filetypes = { "lua" },
-    settings = {
+    settings  = {
         Lua = {
-            runtime = { version = "LuaJIT" },
+            runtime     = { version = "LuaJIT" },
             diagnostics = { globals = { "vim" } },
-            workspace = {
-                library = vim.api.nvim_get_runtime_file("", true),
+            workspace   = {
+                library        = vim.api.nvim_get_runtime_file("", true),
                 checkThirdParty = false,
             },
             telemetry = { enable = false },
@@ -125,8 +118,26 @@ setup("lua_ls", {
     },
 })
 
+setup("serve_d", {
+    cmd       = { "serve-d" },
+    filetypes = { "d" },
+    root_markers = { "dub.json", "dub.sdl", ".git" },
+})
+
+setup("marksman", {
+    cmd       = { "marksman", "server" },
+    filetypes = { "markdown" },
+    root_markers = { ".marksman.toml", ".git" },
+})
+
 setup("ols", {
-    cmd = { "ols" },
+    cmd       = { "ols" },
     filetypes = { "odin" },
+    root_markers = { ".git" },
+})
+
+setup("c3lsp", {
+    cmd       = { "c3lsp" },
+    filetypes = { "c3" },
     root_markers = { ".git" },
 })
