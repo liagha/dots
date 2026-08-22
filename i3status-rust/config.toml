@@ -1,0 +1,34 @@
+[theme]
+theme = "plain"
+
+[theme.overrides]
+idle_fg = "#abcdef"
+
+[icons]
+icons = "none"
+
+[[block]]
+block  = "backlight"
+format = " backlight: $brightness "
+
+[[block]]
+block  = "sound"
+format = " volume: $volume "
+
+[[block]]
+block  = "memory"
+format = " mem: $mem_used.eng(w:3) "
+
+[[block]]
+block     = "disk_space"
+path      = "/"
+info_type = "available"
+interval  = 20
+warning   = 20.0
+alert     = 10.0
+format    = " storage: $available.eng(w:2) "
+
+[[block]]
+block    = "time"
+interval = 5
+format   = " date: $timestamp.datetime(f:'%d/%m/%Y') time: $timestamp.datetime(f:'%R') "

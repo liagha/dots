@@ -39,7 +39,7 @@ for_window [class=".*"] border pixel 1
 
 bindsym $mod+Return       exec alacritty
 bindsym $mod+Shift+q      kill
-bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme /usr/share/rofi/themes/gruvbox-dark.rasi 
+bindsym $mod+d exec ~/.cargo/bin/feu
 
 bindsym $mod+Left         focus left
 bindsym $mod+Down         focus down
@@ -127,15 +127,9 @@ client.placeholder      $black  $black  $fg     $black    $black
 client.background       $black
 
 bar {
-    status_command i3status
-    font pango:JetBrains Mono 9
+    status_command /home/alee/.cargo/bin/i3status-rs ~/.config/i3status-rust/config.toml 
+
     colors {
-        background         $black
-        statusline         $white
-        separator          $dim
-        focused_workspace  $white  $dark   $white
-        active_workspace   $dim    $dark   $fg
-        inactive_workspace $black  $black  $dim
-        urgent_workspace   $urgent $urgent $white
+        background #00000000
     }
 }
