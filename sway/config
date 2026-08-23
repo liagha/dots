@@ -1,0 +1,151 @@
+set $mod Mod1
+
+font pango:JetBrains Mono 9
+
+set $black  #0a0a0a
+set $dark   #111111
+set $white  #ffffff
+set $dim    #444444
+set $fg     #cccccc
+set $urgent #ff2222
+
+input "type:keyboard" {
+    xkb_layout  "us,ir"
+    xkb_options "grp:win_space_toggle"
+}
+
+bindgesture swipe:3:left  workspace next
+bindgesture swipe:3:right workspace prev
+
+output eDP-1 position 0 0
+output VGA-1 position 1920 0
+
+exec dex --autostart --environment sway
+exec nm-applet
+exec xrdb -merge ~/.Xresources
+exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+# --- idle/lock (was: xss-lock + i3lock) ---
+# swayidle replaces xss-lock's job of hooking logind sleep/lock signals
+exec swayidle -w \
+    before-sleep 'swaylock -f -c 000000' \
+    lock 'swaylock -f -c 000000'
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
+bindsym XF86AudioMute        exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute     exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+# --- screen off / lock (was: i3lock + xset dpms + xrandr --off) ---
+bindsym $mod+Shift+x exec swaylock -f -c 000000 && swaymsg "output * dpms off"
+
+# --- screen back on (was: xrandr --auto + xset dpms force on) ---
+bindsym $mod+Shift+z exec swaymsg "output * dpms on"
+
+floating_modifier $mod
+
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders both
+# app_id matches native Wayland clients, class matches XWayland clients
+for_window [app_id=".*"] border pixel 1
+for_window [class=".*"]  border pixel 1
+
+bindsym $mod+Return  exec alacritty
+bindsym $mod+Shift+q kill
+bindsym $mod+d       exec ~/.cargo/bin/feu
+
+bindsym $mod+Left  focus left
+bindsym $mod+Down  focus down
+bindsym $mod+Up    focus up
+bindsym $mod+Right focus right
+
+bindsym $mod+Shift+j         move left
+bindsym $mod+Shift+k         move down
+bindsym $mod+Shift+l         move up
+bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+Left      move left
+bindsym $mod+Shift+Down      move down
+bindsym $mod+Shift+Up        move up
+bindsym $mod+Shift+Right     move right
+
+bindsym $mod+h           split h
+bindsym $mod+v           split v
+bindsym $mod+f           fullscreen toggle
+bindsym $mod+s           layout stacking
+bindsym $mod+w           layout tabbed
+bindsym $mod+e           layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space       focus mode_toggle
+bindsym $mod+a           focus parent
+
+set $ws1  "1"
+set $ws2  "2"
+set $ws3  "3"
+set $ws4  "4"
+set $ws5  "5"
+set $ws6  "6"
+set $ws7  "7"
+set $ws8  "8"
+set $ws9  "9"
+set $ws10 "10"
+
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r restart
+# swaynag replaces i3-nagbar
+bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
+
+mode "resize" {
+    bindsym j         resize shrink width  10 px or 10 ppt
+    bindsym k         resize grow   height 10 px or 10 ppt
+    bindsym l         resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow   width  10 px or 10 ppt
+    bindsym Left      resize shrink width  10 px or 10 ppt
+    bindsym Down      resize grow   height 10 px or 10 ppt
+    bindsym Up        resize shrink height 10 px or 10 ppt
+    bindsym Right     resize grow   width  10 px or 10 ppt
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# class                 border  backgr  text    indicator child_border
+client.focused          $white  $dark   $white  $white    $white
+client.focused_inactive $dim    $black  $fg     $dim      $dim
+client.unfocused        $black  $black  $dim    $black    $black
+client.urgent           $urgent $urgent $white  $urgent   $urgent
+client.placeholder      $black  $black  $fg     $black    $black
+client.background       $black
+
+bar {
+    status_command /home/alee/.cargo/bin/i3status-rs ~/.config/i3status-rust/config.toml
+
+    colors {
+        background #00000000
+    }
+}
