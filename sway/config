@@ -14,6 +14,12 @@ input "type:keyboard" {
     xkb_options "grp:win_space_toggle"
 }
 
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+
 bindgesture swipe:3:left  workspace next
 bindgesture swipe:3:right workspace prev
 
