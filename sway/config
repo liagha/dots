@@ -23,6 +23,9 @@ input type:touchpad {
 bindgesture swipe:3:left  workspace next
 bindgesture swipe:3:right workspace prev
 
+bindgesture swipe:3:up   focus left
+bindgesture swipe:3:down focus right
+
 output eDP-1 position 0 0
 output VGA-1 position 1920 0
 
@@ -58,7 +61,7 @@ hide_edge_borders both
 for_window [app_id=".*"] border pixel 1
 for_window [class=".*"]  border pixel 1
 
-bindsym $mod+Return  exec alacritty
+bindsym $mod+Return  exec kitty
 bindsym $mod+Shift+q kill
 bindsym $mod+d       exec ~/.cargo/bin/feu
 
