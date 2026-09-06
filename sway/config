@@ -34,9 +34,8 @@ exec nm-applet
 exec xrdb -merge ~/.Xresources
 exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec mako
 
-# --- idle/lock (was: xss-lock + i3lock) ---
-# swayidle replaces xss-lock's job of hooking logind sleep/lock signals
 exec swayidle -w \
     before-sleep 'swaylock -f -c 000000' \
     lock 'swaylock -f -c 000000'
@@ -46,10 +45,8 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
 bindsym XF86AudioMute        exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86AudioMicMute     exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
-# --- screen off / lock (was: i3lock + xset dpms + xrandr --off) ---
 bindsym $mod+Shift+x exec swaylock -f -c 000000 && swaymsg "output * dpms off"
 
-# --- screen back on (was: xrandr --auto + xset dpms force on) ---
 bindsym $mod+Shift+z exec swaymsg "output * dpms on"
 
 floating_modifier $mod
@@ -57,7 +54,6 @@ floating_modifier $mod
 default_border pixel 1
 default_floating_border pixel 1
 hide_edge_borders both
-# app_id matches native Wayland clients, class matches XWayland clients
 for_window [app_id=".*"] border pixel 1
 for_window [class=".*"]  border pixel 1
 
@@ -124,7 +120,6 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
-# swaynag replaces i3-nagbar
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
 
 mode "resize" {
@@ -143,7 +138,6 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# class                 border  backgr  text    indicator child_border
 client.focused          $white  $dark   $white  $white    $white
 client.focused_inactive $dim    $black  $fg     $dim      $dim
 client.unfocused        $black  $black  $dim    $black    $black
@@ -158,3 +152,9 @@ bar {
         background #00000000
     }
 }
+
+for_window [app_id="qalc_scratch"] floating enable, sticky enable, resize set width 400 px height 500 px, move position center
+bindsym $mod+apostrophe exec sh -c 'swaymsg scratchpad show 2>/dev/null || { swaymsg "exec kitty --class qalc_scratch -e qalc" && sleep 1 && swaymsg "[app_id=qalc_scratch] move scratchpad" && swaymsg scratchpad show; }'
+
+for_window [app_id="term_scratch"] floating enable, sticky enable, resize set width 400 px height 500 px, move position center
+bindsym $mod+semicolon exec sh -c 'swaymsg scratchpad show 2>/dev/null || { swaymsg "exec kitty --class term_scratch" && sleep 1 && swaymsg "[app_id=term_scratch] move scratchpad" && swaymsg scratchpad show; }'

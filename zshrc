@@ -1,4 +1,4 @@
-# ~/.zshrc
+fpath=(~/.zsh/completions $fpath)
 
 ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 
@@ -31,5 +31,8 @@ export PATH="$HOME/.local/bin:$PATH"
 # >>> grok installer >>>
 export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
-autoload -Uz compinit && compinit -C
 # <<< grok installer <<<
+
+export PATH=/home/alee/.opencode/bin:$PATH
+
+export PATH="/home/alee/.gapcode/bin:$PATH"

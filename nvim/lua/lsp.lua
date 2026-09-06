@@ -3,6 +3,11 @@ if vim.fn.isdirectory(cargo_bin) == 1 then
     vim.env.PATH = cargo_bin .. ":" .. vim.env.PATH
 end
 
+local erg_root = vim.fn.expand("~/.erg")
+if vim.fn.isdirectory(erg_root) == 1 then
+    vim.env.ERG_PATH = erg_root
+end
+
 vim.diagnostic.config({
     virtual_text = {
         prefix  = "",
@@ -86,20 +91,31 @@ setup("rust_analyzer", {
     root_markers = { "Cargo.toml" },
 })
 
-setup("pyright", {
-    cmd       = { "pyright-langserver", "--stdio" },
+setup("pylyzer", {
+    cmd       = { "pylyzer", "--server" },
     filetypes = { "python" },
     settings  = {
         python = {
-            analysis = {
-                autoSearchPaths      = true,
-                diagnosticMode       = "workspace",
-                useLibraryCodeForTypes = true,
-                typeCheckingMode     = "basic",
-            },
+            diagnostics     = true,
+            inlayHints      = true,
+            smartCompletion = true,
+            checkOnType     = false,
         },
     },
     root_markers = { "pyproject.toml", "setup.py", "setup.cfg", "requirements.txt", ".git", "Pipfile" },
+})
+
+setup("ruff", {
+    cmd          = { "ruff", "server" },
+    filetypes    = { "python" },
+    root_markers = { "pyproject.toml", "ruff.toml", ".ruff.toml", ".git" },
+    init_options = {
+        settings = {
+            configurationPreference = "filesystemFirst",
+            lint    = { enable = true },
+            format  = { enable = true },
+        },
+    },
 })
 
 setup("lua_ls", {

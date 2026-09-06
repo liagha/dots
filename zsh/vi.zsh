@@ -1,5 +1,3 @@
-# ~/.config/zsh/vi.zsh
-
 KEYTIMEOUT=1
 
 bindkey -v

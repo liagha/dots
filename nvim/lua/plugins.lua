@@ -15,6 +15,15 @@ vim.lsp.config.hover = { border = "single" }
 vim.lsp.config.signature_help = { border = "single" }
 vim.diagnostic.config({ float = { border = "single" } })
 
+local function guarded(fn)
+    return function(...)
+        local ok, err = pcall(fn, ...)
+        if not ok then
+            vim.notify("Plugin failed to load: " .. err, vim.log.levels.ERROR)
+        end
+    end
+end
+
 local telescope_keys = {
     { "<leader>ff", "<cmd>Telescope find_files<CR>", desc = "Find files" },
     { "<leader>fg", "<cmd>Telescope live_grep<CR>",  desc = "Live grep" },
@@ -28,7 +37,7 @@ require("lazy").setup({
         tag = "0.1.8",
         dependencies = { "nvim-lua/plenary.nvim" },
         keys = telescope_keys,
-        config = function()
+        config = guarded(function()
             require("telescope").setup({
                 defaults = {
                     preview = { treesitter = false },
@@ -37,15 +46,16 @@ require("lazy").setup({
             for _, key in ipairs(telescope_keys) do
                 vim.keymap.set("n", key[1], key[2], { desc = key.desc })
             end
-        end,
+        end),
     },
 
     {
         "stevearc/oil.nvim",
         keys = {
             { "-", "<cmd>Oil<CR>", desc = "Open parent directory" },
+            { "<leader>e", "<cmd>Oil --vsplit<CR>", desc = "Open file tree (vsplit)" },
         },
-        config = function()
+        config = guarded(function()
             require("oil").setup({
                 default_file_explorer = false,
                 delete_to_trash = true,
@@ -60,13 +70,13 @@ require("lazy").setup({
                     ["_"]    = "actions.open_cwd",
                 },
             })
-        end,
+        end),
     },
 
     {
         "folke/which-key.nvim",
         event = "VeryLazy",
-        config = function()
+        config = guarded(function()
             require("which-key").setup({
                 icons = { rules = false },
                 spec = {
@@ -75,87 +85,11 @@ require("lazy").setup({
                     { "<leader>h", group = "harpoon" },
                     { "<leader>o", group = "open" },
                     { "<leader>s", group = "swap/source/terminal" },
-                    { "<leader>d", group = "debug" },
                     { "<leader>y", group = "yank" },
                     { "<leader>p", group = "paste" },
                 },
             })
-        end,
-    },
-
-    {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        dependencies = {
-            "nvim-lua/plenary.nvim",
-            "MunifTanjim/nui.nvim",
-        },
-        keys = {
-            { "<leader>e", "<cmd>Neotree toggle<CR>", desc = "Toggle file tree" },
-        },
-        config = function()
-            require("neo-tree").setup({
-                close_if_last_window = true,
-                window = {
-                    mappings = { ["<leader>e"] = "close_window" },
-                },
-                filesystem = {
-                    filtered_items = {
-                        visible = true,
-                        hide_dotfiles = false,
-                    },
-                },
-                default_component_configs = {
-                    indent = {
-                        with_markers = false,
-                        with_expanders = false,
-                    },
-                    icon = {
-                        folder_closed = "",
-                        folder_open = "",
-                        folder_empty = "",
-                        folder_empty_open = "",
-                        default = "",
-                    },
-                    git_status = {
-                        symbols = {
-                            added     = "+",
-                            modified  = "~",
-                            deleted   = "-",
-                            renamed   = ">",
-                            untracked = "?",
-                            ignored   = "",
-                            unstaged  = "",
-                            staged    = "",
-                            conflict  = "!",
-                        },
-                    },
-                },
-            })
-        end,
-    },
-
-    {
-        "lewis6991/gitsigns.nvim",
-        event = "BufReadPre",
-        keys = {
-            { "]h",         desc = "Next hunk" },
-            { "[h",         desc = "Prev hunk" },
-            { "<leader>hs", desc = "Stage hunk" },
-            { "<leader>hu", desc = "Undo stage hunk" },
-            { "<leader>hp", desc = "Preview hunk" },
-            { "<leader>hb", desc = "Blame line" },
-        },
-        config = function()
-            local gs = require("gitsigns")
-            gs.setup()
-            vim.keymap.set("n", "]h", gs.next_hunk, { desc = "Next hunk" })
-            vim.keymap.set("n", "[h", gs.prev_hunk, { desc = "Prev hunk" })
-            vim.keymap.set({ "n", "v" }, "<leader>hs", gs.stage_hunk, { desc = "Stage hunk" })
-            vim.keymap.set({ "n", "v" }, "<leader>hu", gs.undo_stage_hunk, { desc = "Undo stage hunk" })
-            vim.keymap.set("n", "<leader>hp", gs.preview_hunk, { desc = "Preview hunk" })
-            vim.keymap.set("n", "<leader>hb", gs.blame_line, { desc = "Blame line" })
-        end,
+        end),
     },
 
     {
@@ -169,7 +103,7 @@ require("lazy").setup({
             "L3MON4D3/LuaSnip",
             "saadparwaiz1/cmp_luasnip",
         },
-        config = function()
+        config = guarded(function()
             local cmp     = require("cmp")
             local luasnip = require("luasnip")
 
@@ -258,40 +192,18 @@ require("lazy").setup({
                 mapping = cmp.mapping.preset.cmdline(),
                 sources = cmp.config.sources({ { name = "cmdline" } }),
             })
-        end,
-    },
-
-    {
-        "mfussenegger/nvim-dap",
-        keys = {
-            { "<leader>db", desc = "Toggle breakpoint" },
-            { "<leader>dc", desc = "Continue" },
-        },
-        dependencies = {
-            "rcarriga/nvim-dap-ui",
-            "nvim-neotest/nvim-nio",
-        },
-        config = function()
-            local dap    = require("dap")
-            local dapui  = require("dapui")
-            dapui.setup()
-            dap.listeners.after.event_initialized["dapui_config"]  = function() dapui.open() end
-            dap.listeners.before.event_terminated["dapui_config"]  = function() dapui.close() end
-            dap.listeners.before.event_exited["dapui_config"]      = function() dapui.close() end
-            vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "Toggle breakpoint" })
-            vim.keymap.set("n", "<leader>dc", dap.continue, { desc = "Continue" })
-        end,
+        end),
     },
 
     {
         "stevearc/conform.nvim",
         event = "BufWritePre",
-        config = function()
+        config = guarded(function()
             require("conform").setup({
                 formatters_by_ft = {
                     lua        = { "stylua" },
                     rust       = { "rustfmt" },
-                    python     = { "black" },
+                    python     = { "ruff_format" },
                     javascript = { "prettier" },
                     typescript = { "prettier" },
                     markdown   = { "prettier" },
@@ -300,18 +212,18 @@ require("lazy").setup({
                 },
                 format_on_save = {
                     lsp_fallback = true,
-                    async        = false,
+                    async        = true,
                     timeout_ms   = 1000,
                 },
             })
-        end,
+        end),
     },
 
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
-        lazy = false,
-        config = function()
+        event = { "BufReadPost", "BufNewFile" },
+        config = guarded(function()
             require("nvim-treesitter").setup({
                 ensure_install = {
                     "c", "cpp", "rust", "python", "go",
@@ -329,15 +241,15 @@ require("lazy").setup({
                     pcall(vim.treesitter.stop, args.buf)
                 end,
             })
-        end,
+        end),
     },
 
     {
         "nvim-treesitter/nvim-treesitter-textobjects",
         branch = "main",
-        lazy = false,
+        event = { "BufReadPost", "BufNewFile" },
         dependencies = { "nvim-treesitter/nvim-treesitter" },
-        config = function()
+        config = guarded(function()
             local select = require("nvim-treesitter-textobjects.select")
             local move   = require("nvim-treesitter-textobjects.move")
             local swap   = require("nvim-treesitter-textobjects.swap")
@@ -396,7 +308,7 @@ require("lazy").setup({
             vim.keymap.set({ "n", "x" }, "<leader>sp", function()
                 swap.swap_previous("@parameter.inner", "textobjects")
             end)
-        end,
+        end),
     },
 
     {
@@ -411,7 +323,7 @@ require("lazy").setup({
             { "<leader>3",  desc = "Harpoon file 3" },
             { "<leader>4",  desc = "Harpoon file 4" },
         },
-        config = function()
+        config = guarded(function()
             local harpoon = require("harpoon")
             harpoon:setup()
             vim.keymap.set("n", "<leader>ha", function() harpoon:list():add() end, { desc = "Harpoon add" })
@@ -420,6 +332,6 @@ require("lazy").setup({
             vim.keymap.set("n", "<leader>2", function() harpoon:list():select(2) end, { desc = "Harpoon file 2" })
             vim.keymap.set("n", "<leader>3", function() harpoon:list():select(3) end, { desc = "Harpoon file 3" })
             vim.keymap.set("n", "<leader>4", function() harpoon:list():select(4) end, { desc = "Harpoon file 4" })
-        end,
+        end),
     },
 })
