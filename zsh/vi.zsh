@@ -18,17 +18,17 @@ bindkey -M viins '^?' backward-delete-char
 bindkey -M viins '^H' backward-delete-char
 bindkey -M viins '^W' backward-kill-word
 
-VI_MODE="I"
+VI_MODE="i"
 
 function zle-keymap-select {
     case $KEYMAP in
         vicmd)
             echo -ne '\e[2 q'
-            VI_MODE="N"
+            VI_MODE="n"
             ;;
         viins|main)
             echo -ne '\e[5 q'
-            VI_MODE="I"
+            VI_MODE="i"
             ;;
     esac
     zle reset-prompt
@@ -38,7 +38,7 @@ zle -N zle-keymap-select
 function zle-line-init {
     zle -K viins
     echo -ne '\e[5 q'
-    VI_MODE="I"
+    VI_MODE="i"
 }
 zle -N zle-line-init
 
@@ -49,21 +49,21 @@ zle -N zle-line-finish
 
 function vi-visual-mode {
     zle visual-mode
-    VI_MODE="V"
+    VI_MODE="v"
 }
 zle -N vi-visual-mode
 bindkey -M vicmd 'v' vi-visual-mode
 
 function vi-visual-line-mode {
     zle visual-line-mode
-    VI_MODE="VL"
+    VI_MODE="vl"
 }
 zle -N vi-visual-line-mode
 bindkey -M vicmd 'V' vi-visual-line-mode
 
 function vi-visual-block-mode {
     zle visual-block-mode
-    VI_MODE="VB"
+    VI_MODE="vb"
 }
 zle -N vi-visual-block-mode
 bindkey -M vicmd '^V' vi-visual-block-mode
