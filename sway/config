@@ -29,16 +29,14 @@ bindgesture swipe:3:down focus right
 output eDP-1 position 0 0
 output VGA-1 position 1920 0
 
-exec dex --autostart --environment sway
-exec nm-applet
-exec xrdb -merge ~/.Xresources
-exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
-exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-exec mako
+exec sh -c 'command -v dex >/dev/null && exec dex --autostart --environment sway'
+exec sh -c 'command -v nm-applet >/dev/null && exec nm-applet'
+exec sh -c '[ -f ~/.Xresources ] && exec xrdb -merge ~/.Xresources'
+exec sh -c "command -v gsettings >/dev/null && exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'"
+exec sh -c "command -v gsettings >/dev/null && exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'"
+exec sh -c 'command -v mako >/dev/null && exec mako'
 
-exec swayidle -w \
-    before-sleep 'swaylock -f -c 000000' \
-    lock 'swaylock -f -c 000000'
+exec sh -c "command -v swayidle >/dev/null && exec swayidle -w before-sleep 'swaylock -f -c 000000' lock 'swaylock -f -c 000000'"
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +10%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -10%
@@ -146,7 +144,7 @@ client.placeholder      $black  $black  $fg     $black    $black
 client.background       $black
 
 bar {
-    status_command /home/alee/.cargo/bin/i3status-rs ~/.config/i3status-rust/config.toml
+    status_command sh -c "command -v i3status-rs >/dev/null 2>&1 && exec i3status-rs ~/.config/i3status-rust/config.toml || exec i3status"
 
     colors {
         background #00000000

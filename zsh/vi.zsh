@@ -69,9 +69,11 @@ zle -N vi-visual-block-mode
 bindkey -M vicmd '^V' vi-visual-block-mode
 
 function edit_command_line {
+    local ed="${EDITOR:-vim}"
+    command -v nvim >/dev/null 2>&1 && ed="nvim"
     local tmpfile=$(mktemp)
     print -r -- "$BUFFER" > "$tmpfile"
-    nvim "$tmpfile"
+    $ed "$tmpfile"
     BUFFER=$(<"$tmpfile")
     zle reset-prompt
     rm "$tmpfile"

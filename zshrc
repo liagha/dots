@@ -19,12 +19,9 @@ setopt EXTENDED_GLOB
 setopt INTERACTIVE_COMMENTS
 setopt PROMPT_SUBST
 
-source "${ZDOTDIR}/completion.zsh"
-source "${ZDOTDIR}/vi.zsh"
-source "${ZDOTDIR}/prompt.zsh"
-source "${ZDOTDIR}/aliases.zsh"
-source "${ZDOTDIR}/fzf.zsh"
-source "${ZDOTDIR}/zoxide.zsh"
+for module in completion vi prompt aliases fzf zoxide; do
+    [[ -f "$ZDOTDIR/$module.zsh" ]] && source "$ZDOTDIR/$module.zsh"
+done
 
 export PATH="$HOME/.local/bin:$PATH"
 

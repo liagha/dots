@@ -1,24 +1,37 @@
+command -v eza >/dev/null 2>&1 && alias ls='eza --icons --group-directories-first'
+
+if command -v eza >/dev/null 2>&1; then
+    alias ll='eza -la --icons --group-directories-first --git'
+    alias lt='eza --tree --level=2 --icons'
+    alias la='eza -a --icons --group-directories-first'
+else
+    alias ll='ls -lah'
+    alias lt='ls -R'
+    alias la='ls -A'
+fi
+
+if command -v nvim >/dev/null 2>&1; then
+    alias v='nvim'
+    alias vi='nvim'
+    alias vim='nvim'
+else
+    alias v='vim'
+    alias vi='vim'
+fi
+
+command -v rg      >/dev/null 2>&1 && alias grep='rg'
+command -v fd      >/dev/null 2>&1 && alias find='fd'
+command -v duf     >/dev/null 2>&1 && alias df='duf'
+command -v dust    >/dev/null 2>&1 && alias du='dust'
+command -v procs   >/dev/null 2>&1 && alias ps='procs'
+command -v lazygit >/dev/null 2>&1 && alias lg='lazygit'
+command -v yq      >/dev/null 2>&1 && alias yq='yq --pretty-print'
+
 alias c='clear && printf "\033[3J"'
 alias clear='clear && printf "\033[3J"'
-
-alias ls='eza --icons --group-directories-first'
-alias ll='eza -la --icons --group-directories-first --git'
-alias lt='eza --tree --level=2 --icons'
-alias la='eza -a --icons --group-directories-first'
-
-alias grep='rg'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
-alias lg='lazygit'
-
-alias find='fd'
-
-alias yq='yq --pretty-print'
 
 extract() {
     case $1 in
@@ -45,10 +58,6 @@ cd() {
 mkcd() { mkdir -p "$1" && cd "$1" }
 
 ports() { ss -tulanp | grep "$1" }
-
-alias df='duf'
-alias du='dust'
-alias ps='procs'
 
 alias gs='git status'
 alias ga='git add'

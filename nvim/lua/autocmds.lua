@@ -131,7 +131,8 @@ local function prompt_run(template, vars)
 end
 
 local function oil_vars()
-    local oil   = require("oil")
+    local ok, oil = pcall(require, "oil")
+    if not ok then return nil end
     local entry = oil.get_cursor_entry()
     if not entry or entry.type ~= "file" then return nil end
     local path = oil.get_current_dir() .. entry.name
@@ -237,8 +238,10 @@ vim.api.nvim_create_autocmd("VimEnter", {
         end
         if #dirs == 0 then return end
         vim.schedule(function()
+            local ok, oil = pcall(require, "oil")
+            if not ok then return end
             for _, dir in ipairs(dirs) do
-                require("oil").open(dir)
+                oil.open(dir)
             end
             if vim.fn.argc() == #dirs then
                 vim.cmd("only")

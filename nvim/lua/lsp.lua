@@ -47,8 +47,11 @@ local lsp_attach = function(_, bufnr)
     end, opts)
 end
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-capabilities.textDocument.completion.completionItem.snippetSupport = true
+local ok, cmp = pcall(require, "cmp_nvim_lsp")
+local capabilities = ok and cmp.default_capabilities() or vim.lsp.protocol.make_client_capabilities()
+if ok then
+    capabilities.textDocument.completion.completionItem.snippetSupport = true
+end
 
 local function setup(name, config)
     local cmd        = config.cmd or { name }
