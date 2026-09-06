@@ -53,7 +53,7 @@ require("lazy").setup({
         "stevearc/oil.nvim",
         keys = {
             { "-", "<cmd>Oil<CR>", desc = "Open parent directory" },
-            { "<leader>e", "<cmd>vertical Oil<CR>", desc = "Open file tree (vsplit)" },
+            { "<leader>e", "<cmd>leftabove vertical Oil<CR>", desc = "Open file tree (vsplit)" },
         },
         config = guarded(function()
             require("oil").setup({
