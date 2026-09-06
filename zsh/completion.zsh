@@ -1,3 +1,6 @@
+autoload -Uz compinit
+compinit -d "${ZDOTDIR:-$HOME/.config/zsh}/.zcompdump"
+
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*' menu select
 zstyle ':completion:*' list-colors ''
