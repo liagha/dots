@@ -30,6 +30,6 @@ export PATH="$HOME/.grok/bin:$PATH"
 fpath=(~/.grok/completions/zsh $fpath)
 # <<< grok installer <<<
 
-export PATH=/home/alee/.opencode/bin:$PATH
+export PATH="$HOME/.opencode/bin:$PATH"
 
-export PATH="/home/alee/.gapcode/bin:$PATH"
+export PATH="$HOME/.gapcode/bin:$PATH"
