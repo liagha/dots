@@ -6,4 +6,4 @@ precmd() {
     vcs_info
 }
 
-PROMPT='%F{cyan}[${VI_MODE}]%f %F{245}%m%f @ %F{252}%2~%f '
+PROMPT='%F{cyan}[${VI_MODE}]%f %F{245}%m%f @ %F{245}%2~%f '
