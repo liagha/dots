@@ -33,3 +33,5 @@ fpath=(~/.grok/completions/zsh $fpath)
 export PATH="$HOME/.opencode/bin:$PATH"
 
 export PATH="$HOME/.gapcode/bin:$PATH"
+# kimi-code
+export PATH="$HOME/.kimi-code/bin:$PATH"
