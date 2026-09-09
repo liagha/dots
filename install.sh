@@ -117,6 +117,11 @@ if command -v i3status-rs >/dev/null 2>&1; then
     install_item "$SCRIPT_DIR/i3status-rust" "$XDG_CONFIG_HOME/i3status-rust" "i3status-rust config"
 fi
 
+if command -v fuzzel >/dev/null 2>&1; then
+    echo "[fuzzel]"
+    install_item "$SCRIPT_DIR/fuzzel" "$XDG_CONFIG_HOME/fuzzel" "fuzzel config"
+fi
+
 prune_backups 3
 echo "Done."
 echo "Overwritten files are under $BACKUP_DIR; run $0 --clean once you confirm everything works."

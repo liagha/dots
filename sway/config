@@ -1,3 +1,5 @@
+xwayland enable
+
 set $mod Mod1
 
 font pango:JetBrains Mono 9
@@ -29,6 +31,20 @@ bindgesture swipe:3:down focus right
 output eDP-1 position 0 0
 output VGA-1 position 1920 0
 
+exec sh -c 'export DISPLAY=:0 && dbus-update-activation-environment DISPLAY'
+# ---- Startup layout ----
+# Workspace 1: tabbed firefox / telegram / Throne
+exec sh -c 'swaymsg "workspace number 1"; sleep 1; swaymsg "layout tabbed"'
+exec sh -c 'sleep 3 && firefox'
+exec sh -c 'sleep 4 && Telegram'
+exec sh -c 'sleep 5 && /opt/Throne/Throne'
+# Workspace 2: 4 kitty terminals in a 2x2 split grid
+exec sh -c 'sleep 6; swaymsg "workspace number 2"; swaymsg "layout splitv"; swaymsg "split horizontal"'
+exec sh -c 'sleep 7 && kitty'
+exec sh -c 'sleep 8 && kitty'
+exec sh -c 'sleep 9 && kitty'
+exec sh -c 'sleep 10 && kitty'
+
 exec sh -c 'command -v dex >/dev/null && exec dex --autostart --environment sway'
 exec sh -c 'command -v nm-applet >/dev/null && exec nm-applet'
 exec sh -c '[ -f ~/.Xresources ] && exec xrdb -merge ~/.Xresources'
@@ -57,7 +73,6 @@ for_window [class=".*"]  border pixel 1
 
 bindsym $mod+Return  exec kitty
 bindsym $mod+Shift+q kill
-bindsym $mod+d       exec ~/.cargo/bin/feu
 
 bindsym $mod+Left  focus left
 bindsym $mod+Down  focus down
@@ -156,3 +171,6 @@ bindsym $mod+apostrophe exec sh -c 'swaymsg scratchpad show 2>/dev/null || { swa
 
 for_window [app_id="term_scratch"] floating enable, sticky enable, resize set width 400 px height 500 px, move position center
 bindsym $mod+semicolon exec sh -c 'swaymsg scratchpad show 2>/dev/null || { swaymsg "exec kitty --class term_scratch" && sleep 1 && swaymsg "[app_id=term_scratch] move scratchpad" && swaymsg scratchpad show; }'
+
+for_window [app_id="fuzzel"] floating enable, sticky enable, resize set width 700 px height 500 px, move position center
+bindsym $mod+d exec ~/.local/bin/swaylaunch
